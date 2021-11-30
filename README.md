@@ -1,3 +1,3 @@
 # KeychainTapeCounter
 
-_It counta tha tape! It fitta ona keychain! Oooh!_
+WAIT FOR THE V1 RELEASE BEFORE TRYING TO BUILD YOUR OWN
