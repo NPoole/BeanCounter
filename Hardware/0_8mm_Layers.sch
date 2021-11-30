@@ -6019,6 +6019,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <part name="J12" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-IR" device="0603" value="IR LED"/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6433,9 +6434,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="NAME" x="223.52" y="46.736" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="223.52" y="49.784" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="D1" gate="G$1" x="220.98" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="225.552" y="37.211" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="225.552" y="42.545" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<instance part="D1" gate="G$1" x="223.52" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="218.948" y="44.069" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="218.948" y="38.735" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="GND11" gate="1" x="48.26" y="147.32" smashed="yes">
+<attribute name="VALUE" x="48.26" y="147.066" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6511,6 +6515,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="208.28" y1="66.04" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J10" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="152.4" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="152.4" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -6555,6 +6565,11 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="53.34" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="V_BATT"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
+<label x="48.26" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -6842,6 +6857,11 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <pinref part="R12" gate="G$1" pin="2"/>
 <label x="226.06" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="PB6(14/A9/INT0)"/>
+<wire x1="68.58" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
+<label x="71.12" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="!RESET" class="0">
 <segment>
@@ -7037,13 +7057,6 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <label x="162.56" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="14" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PB6(14/A9/INT0)"/>
-<wire x1="68.58" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
-<label x="71.12" y="43.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="J12" gate="G$1" pin="2"/>
@@ -7058,17 +7071,17 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="231.14" y1="40.64" x2="226.06" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="226.06" y1="40.64" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="218.44" y1="40.64" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="40.64" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="J12" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="215.9" y1="40.64" x2="218.44" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

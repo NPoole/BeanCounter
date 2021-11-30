@@ -1,44 +1,55 @@
 /***************************************************************
- * THIS CODE IS BAD
  * 
- * DO NOT USE IT, IT IS FOR REFERENCE ONLY. IT WAS WRITTEN 
- * HURRIEDLY AND WITH MANIC FERVOR IN THE DEVIL'S HOUR 
- * SO THAT I COULD POST A PROOF-OF-CONCEPT VIDEO ON BIRDSITE.
- * 
- * I MUST URGE YOU IN THE STRONGEST POSSIBLE TERMS NOT TO SHARE
- * YOUR CONCERN OR OPINION OF THIS CODE WITH ME OR ANYONE ELSE
- * AS I HAVE DISCLAIMED IT HEREIN AS BAD AND WRONG. 
- * 
- * THANK YOU
- */
+ ***************************************************************/
 
-#define SEG1 1
-#define SEG2 2
-#define SEG3 3
-#define SEG4 4 
-#define SEG5 5 
-#define SEG6 6
-#define SEG7 7
-#define DIGIT1 8
-#define DIGIT2 9
-#define DIGIT3 10
+// TODO
+// - PITCH IN MM (1,2,4,8,12,16)
+// - START/STOP/RESET
+
+#define DIGIT1_CATHODE 8
+#define DIGIT2_CATHODE 9
+#define DIGIT3_CATHODE 10
 #define IRLED 11
 #define STARTBTN 12
 #define SETBTN 13
 #define IRSENSOR 14
 
-#define SCANDELAY 1
+#define SCANDELAY 500
 
-boolean prevOpt = 0;
+boolean prevOpt = 1;
 boolean curOpt = 1;
 
 String digit1 = "0000000";
 String digit2 = "0000000";
 String digit3 = "0000000";
 
+// DEVICE MODE
+// 0 - IDLE/STOP
+// 1 - COUNTING
+// 2 - RESET
+// 3 - SET PITCH
+byte deviceMode = 0;
+byte returnMode;
+
+byte pitch = 4;
+float ratio = 1.0;
+
+int displayBuf = 0;
 int count = 0;
 byte numPos[10] = {0,0,0,0,0,0,0,0,0,0};
-String digitBuffer = "0000000";
+
+String segmentLUT[] = {
+  "1110111",
+  "0100100",
+  "1011101",
+  "1011011",
+  "0111010",
+  "1101011",
+  "1101111",
+  "1010010",
+  "1111111",
+  "1111010"
+};
 
 void setup() {
   // put your setup code here, to run once:
@@ -58,87 +69,144 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
-  updateLED();
-  //translateSegments(analogRead(A9)/4);
-
-
-  if(digitalRead(STARTBTN) == 0){
-    count=0;
-    delay(100);
-    translateSegments(count);
-  }
-  if(digitalRead(SETBTN) == 0){
-    count = 0;
-    delay(100);
-    translateSegments(count);
-  }
   
-  
-  curOpt = 0;
-  if(analogRead(A9) > 600){
-    curOpt = 1;
-  }
-  
-  if(curOpt!= prevOpt){
-    if(curOpt == 1){
-      count++;
-    }
-    prevOpt = curOpt;
-  }
-
-  translateSegments(count);
-
-}
-
-void translateSegments(int count){
-
-  numPositions(count);
-  digit3 = segBuf(numPos[0]);
-  digit2 = segBuf(numPos[1]);
-  digit1 = segBuf(numPos[2]);
-  
-}
-
-String segBuf(byte num){
-  String str;
-  switch(num){
+  switch(deviceMode){
     case 0:
-      str = "1110111";
+      mode0();
       break;
     case 1:
-      str = "0100100";
+      mode1();
       break;
     case 2:
-      str = "1011101";
+      mode2();
       break;
-    case 3: 
-      str = "1011011";
-      break;
-    case 4: 
-      str = "0111010";
-      break;
-    case 5:
-      str = "1101011";
-      break;
-    case 6:
-      str = "1101111";
-      break;
-    case 7:
-      str = "1010010";
-      break;
-    case 8:
-      str = "1111111";
-      break;
-    case 9:
-      str = "1111010";
+    case 3:
+      mode3();
       break;
     default:
-      str = "0000000";
+      deviceMode = 0;
       break;
   }
-  return str;
+
+}
+
+void mode0(){
+
+  if(digitalRead(STARTBTN) == 0){
+    deviceMode = 2;
+    returnMode = 1;
+    return;
+  }
+  digitalWrite(IRLED, 0);
+  
+  while(deviceMode == 0){
+
+    updateLED();
+    
+    if(digitalRead(STARTBTN) == 0){
+      delay(500);
+      deviceMode = 1;
+    }
+    
+    if(digitalRead(SETBTN) == 0){
+      delay(500);
+      deviceMode = 3;
+      returnMode = 0;
+    }
+    
+    translateSegments(displayBuf);    
+    
+  }
+}
+
+void mode1(){
+
+  if(digitalRead(STARTBTN) == 0){
+    deviceMode = 2;
+    returnMode = 0;
+    return;
+  }
+
+  digitalWrite(IRLED, 1);
+  
+  while(deviceMode == 1){
+  
+    updateLED();
+  
+    if(digitalRead(STARTBTN) == 0){
+      delay(500);
+      deviceMode = 0;
+    }
+    
+    if(digitalRead(SETBTN) == 0){
+      delay(500);
+      deviceMode = 3;
+      returnMode = 1;
+    }
+  
+    translateSegments(displayBuf);
+    
+  }
+}
+
+void mode2(){
+  while(deviceMode == 2){
+    for(int i = 0; i < 100; i++){
+      updateLED();
+    }
+    delay(300);
+    if(digitalRead(STARTBTN) == 1){
+      count = 0;
+      displayBuf = 0;
+      deviceMode = returnMode;
+    }
+  }
+}
+
+void mode3(){
+  
+  while(deviceMode == 3){
+    if(digitalRead(STARTBTN) == 0){
+      delay(200);
+      switch(pitch){
+        case 1:
+          pitch = 2;
+          break;
+        case 2:
+          pitch = 4;
+          break;
+        case 4: 
+          pitch = 8;
+          break;
+        case 8:
+          pitch = 12;
+          break;
+        case 12:
+          pitch = 16;
+          break;
+        case 16:
+          pitch = 1;
+          break;       
+      }
+      ratio = 4.0/int(pitch);
+    }
+    if(digitalRead(SETBTN) == 0){
+      delay(200);
+      deviceMode = returnMode;
+      translateSegments(0);
+    }
+    translateSegments(pitch);
+    updateLED();  
+  }
+}
+
+void translateSegments(int displayBuf){
+
+  numPositions(displayBuf);
+  digit3 = segmentLUT[numPos[0]];
+  digit2 = segmentLUT[numPos[1]];
+  digit1 = segmentLUT[numPos[2]];
+  
 }
 
 void updateLED(){
@@ -147,25 +215,25 @@ void updateLED(){
     digitalWrite(i, digit1.charAt(i) == '1');
   }
   
-  digitalWrite(DIGIT1, 1);
-  delay(SCANDELAY);
-  digitalWrite(DIGIT1, 0);
+  digitalWrite(DIGIT1_CATHODE, 1);
+  if(deviceMode==1){updateCount();}else{delayMicroseconds(SCANDELAY);}
+  digitalWrite(DIGIT1_CATHODE, 0);
   
   for(int i = 0; i < 7; i++){
     digitalWrite(i, digit2.charAt(i) == '1');
   }
 
-  digitalWrite(DIGIT2, 1);
-  delay(SCANDELAY);
-  digitalWrite(DIGIT2, 0);
+  digitalWrite(DIGIT2_CATHODE, 1);
+  if(deviceMode==1){updateCount();}else{delayMicroseconds(SCANDELAY);}
+  digitalWrite(DIGIT2_CATHODE, 0);
   
   for(int i = 0; i < 7; i++){
     digitalWrite(i, digit3.charAt(i) == '1');
   }
 
-  digitalWrite(DIGIT3, 1);
-  delay(SCANDELAY);
-  digitalWrite(DIGIT3, 0);
+  digitalWrite(DIGIT3_CATHODE, 1);
+  if(deviceMode==1){updateCount();}else{delayMicroseconds(SCANDELAY);}
+  digitalWrite(DIGIT3_CATHODE, 0);
   
 }
 
@@ -181,4 +249,20 @@ void numPositions(int num){
       pos++;
     }
     return;
+}
+
+void updateCount(){
+  int av = analogRead(A9);
+  if(av > 610){
+    curOpt = 1;
+  }else if(av < 590){
+    curOpt = 0;
+  }
+  if(curOpt!= prevOpt){
+    if(curOpt == 1){
+      count++;
+      displayBuf = count * ratio;
+    }
+    prevOpt = curOpt;
+  }
 }
