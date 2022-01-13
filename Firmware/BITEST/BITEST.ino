@@ -16,8 +16,9 @@
 
 #define SCANDELAY 500
 
-boolean prevOpt = 1;
-boolean curOpt = 1;
+byte state_previous = 0b00;
+byte state_a = 0b01;
+byte state_b = 0b10;
 
 String digit1 = "0000000";
 String digit2 = "0000000";
@@ -64,6 +65,7 @@ void setup() {
   }
 
   pinMode(A9, INPUT);
+  pinMode(A6, INPUT);
   digitalWrite(IRLED, 1);
 
 }
@@ -258,17 +260,30 @@ void numPositions(int num){
 }
 
 void updateCount(){
-  int av = analogRead(A9);
-  if(av > 150){
-    curOpt = 1;
-  }else if(av < 100){
-    curOpt = 0;
-  }
-  if(curOpt!= prevOpt){
-    if(curOpt == 1){
-      count++;
-      displayBuf = count * ratio;
+
+  int adc_a = analogRead(A9);
+  int adc_b = analogRead(A6);
+  if(adc_a > 150){state_a = 0b01;
+  }else if(adc_a < 100){state_a = 0b00;}
+  if(adc_b > 150){state_b = 0b10;
+  }else if(adc_b < 100){state_b = 0b00;}
+  
+  byte state_current = state_a + state_b;
+  //displayBuf = state_current;
+
+  if(state_current != state_previous){
+    if(state_previous == 0b11){
+      switch(state_current){
+        case 0b01:
+          count++;
+          displayBuf = count * ratio;
+          break;
+        case 0b10:
+          count--;
+          displayBuf = count * ratio;
+          break;
+      }
     }
-    prevOpt = curOpt;
+    state_previous = state_current;
   }
 }
