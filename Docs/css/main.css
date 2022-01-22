@@ -1,0 +1,229 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+body {
+  background-color: rgb(255 223 133);
+  overflow: hidden;
+  font-family: 'Barlow', sans-serif;
+}
+
+#userView {
+  height: 100vh;
+  display: block;
+}
+
+#navBar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(46, 46, 46);
+}
+
+#ghCorner {
+   position: fixed;
+   right: 0px;
+   top: 0px;
+   height: 80px;
+}
+
+#menuLogo {
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    height: 30px;
+ }
+
+.scrollViewport {
+  display: block;
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+}
+
+#chunkTwo {
+  background-color: rgba(91, 255, 219, 0.822);
+  color: white;
+  font-size: 32pt;
+  text-align: center;
+}
+
+#chunkThreeAndHalf{
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    font-size: 32pt;
+    text-align: center;
+  }
+
+#bcBody {
+  display: block;
+  position: fixed;
+  z-index: -100;
+  top: 40vh;
+  left: 10%;
+  height: 16vw;
+  width: auto;
+  border-radius: 20px;
+}
+
+.pcbImg {
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+}
+
+
+#bcEndSpacer {
+    display: block;
+    position: absolute;    
+    top: 1.4%;
+    left: 0.3%;
+    height: 100%;
+}
+
+#bcMidSpacer {
+    display: block;
+    position: absolute;    
+    top: 1.4%;
+    left: 16.3%;
+    height: 100%;
+}
+
+#bcSegmentSpacer {
+    display: block;
+    position: absolute;    
+    top: 1.4%;
+    left: 40.5%;
+    height: 100%;
+}
+
+#bcThinSpacerA {
+    display: block;
+    position: absolute;    
+    z-index: 10;
+    top: 2.8%;
+    left: 0.6%;
+    height: 100%;  
+}
+
+#bcThinSpacerB {
+    display: block;
+    position: absolute;    
+    z-index: 10;
+    top: 2.8%;
+    right: -0.6%;
+    height: 100%;  
+}
+
+#bcThinSpacerC {
+    display: block;
+    position: absolute;    
+    z-index: 15;
+    top: 4.2%;
+    left: 0.9%;
+    height: 100%;  
+}
+
+#bcLogoCover {
+    display: block;
+    position: absolute;    
+    z-index: 20;
+    top: 5.6%;
+    left: 1.2%;
+    height: 100%;  
+}
+
+#bcCover {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40%;
+  height: 98%;
+  background-color: white;
+  border-top-left-radius: inherit;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 1%;
+
+}
+
+#bcButtons {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 16%;
+  height: 98%;
+  background-color: white;
+  border-top-right-radius: inherit;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1%;
+
+}
+
+#bcLogo {
+  height: 24%;
+  top: 38%;
+  left: 15%;
+  position: absolute;
+}
+
+#bcTape {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  left: 20vw;
+  top: 20vh;
+  margin-top: 20vh;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-image: url("../img/tape.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  width: 4vw;
+  height: 70vh;
+}
+
+#bcCounterShadow {
+  display: block;
+  position: absolute;
+  left: 45%;
+  top: 0;
+  color: #615c4e;
+  font-family: 'Seven Segment', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 16vw;
+}
+
+#bcCounter {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  right: 19%;
+  top: 0;
+  color: #bd0000;
+  font-family: 'Seven Segment', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 16vw;
+}
