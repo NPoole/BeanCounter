@@ -1,0 +1,14 @@
+Exported from Keychain_Tape.brd at 11/12/2021 11:43 PM
+
+1x       BATTCON_20MM                         BATTCON_20MM_4LEGS_OVERPASTE_INNER 
+2x       0.1uF                                0603                               
+1x       IR LED                               LED-0603                           
+1x       IR PHOTOTRANS                        LED-0603                           
+21x      LED                                  LED-0603                           
+3x       220mA/50V/3.5?                       SOT23-3                            
+1x       1k                                   0603                               
+7x       330                                  0603                               
+5x       1k                                   0603                               
+2x       MOMENTARY-SWITCH-SPST-SMD-5.2MM-TALL TACTILE_SWITCH_SMD_5.2MM           
+1x       SWITCH_SPST_SMD_A                    SWITCH_SPST_SMD_A                  
+1x       ATTINY861V-10MU                      32M1-A_ATM                         
