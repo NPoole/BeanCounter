@@ -1,13 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/seven-segment');
 body {
-    background-color: rgb(255 223 133);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #userView {
     height: 100vh;
     display: block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(195 195 195) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
 #navBar {
@@ -43,16 +44,48 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
+    padding-left: 0vw;
+    padding-right: 0vw;
 }
 
 section {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     scroll-snap-align: center;
     pointer-events: auto;
 }
 
-#chunkOne {}
+.sectionHeader {
+    text-align: center;
+    display: flex;
+    position: relative;
+    font-weight: 400;
+    top: 2%;
+    height: 30%;
+    width: 60%;
+    left: 20%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sectionBody {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    font-weight: 200;
+    bottom: 80px;
+    height: 45%;
+    width: 60%;
+    left: 20%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#chunkOne {
+    background-color: rgb(255 223 133);
+}
 
 #chunkTwo {
     z-index: -1000;
@@ -74,8 +107,8 @@ section {
     position: fixed;
     z-index: 10;
     top: 40vh;
-    left: 10%;
-    height: 16vw;
+    left: 23%;
+    height: 11vw;
     width: auto;
     border-radius: 20px;
     pointer-events: none;
@@ -196,9 +229,10 @@ section {
     left: 20vw;
     top: 20vh;
     margin-top: 20vh;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+    border-color: #9b9b9b;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-width: 0.2vw;
     background-image: url("../img/tape.png");
     background-size: 100%;
     background-repeat: repeat-y;
