@@ -14,6 +14,7 @@ body {
 #navBar {
     display: block;
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,6 +53,7 @@ section {
     height: 100vh;
     width: 100%;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
     pointer-events: auto;
 }
 
@@ -72,10 +74,10 @@ section {
 .sectionBody {
     text-align: center;
     display: flex;
-    position: absolute;
+    position: relative;
     font-weight: 200;
-    bottom: 80px;
-    height: 45%;
+    top: 10%;
+    height: 50%;
     width: 60%;
     left: 20%;
     justify-content: center;
@@ -84,22 +86,27 @@ section {
 }
 
 #chunkOne {
-    background-color: rgb(255 223 133);
+    background-color: rgb(255, 223, 133);
 }
 
 #chunkTwo {
-    z-index: -1000;
-    background-color: rgba(91, 255, 219, 0.822);
-    color: white;
-    font-size: 32pt;
-    text-align: center;
+    background-color: rgb(7, 190, 184);
+}
+
+#chunkThree {
+    background-color: rgb(255, 107, 108);
 }
 
 #chunkThreeAndHalf {
-    background-color: rgba(0, 0, 0, 0.712);
-    color: white;
-    font-size: 32pt;
-    text-align: center;
+    background-color: rgb(128, 155, 206);
+}
+
+#chunkFour {
+    background-color: rgb(255, 223, 133);
+}
+
+#chunkFive {
+    background-color: rgb(255, 255, 255);
 }
 
 #bcBody {
@@ -240,6 +247,24 @@ section {
     height: 70vh;
 }
 
+#bcTape2 {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    left: 15vw;
+    top: 25vh;
+    margin-top: 45vh;
+    border-color: #1a1a1a;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-width: 0.1vw;
+    background-image: url("../img/tape_plastic.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    width: 4vw;
+    height: 35vh;
+}
+
 #bcCounterShadow {
     display: block;
     position: absolute;
@@ -261,4 +286,20 @@ section {
     font-family: 'Seven Segment', sans-serif;
     letter-spacing: 0.1em;
     font-size: 16vw;
+}
+
+#preload {
+    visibility: hidden;
+}
+
+#xdim {
+    position: absolute;
+}
+
+#ydim {
+    position: absolute;
+}
+
+#cr2032 {
+    position: absolute;
 }

@@ -1,9 +1,15 @@
 $("#viewBody").scroll(function() {
     var offset = 0;
     var animMargin = $("#viewBody").height() - ($("#viewBody").height() * 0.1);
-    var chunkTop = $("#chunkFour")[0].getBoundingClientRect().top;
-    if (chunkTop < animMargin) {
-        offset = ((1 - (chunkTop / animMargin)) * ($("#bcBody").height() / 50));
+    var chunk4Top = $("#chunkFour")[0].getBoundingClientRect().top;
+    var chunk5Top = $("#chunkFive")[0].getBoundingClientRect().top;
+    if (chunk4Top < animMargin) {
+        offset = ((1 - (chunk4Top / animMargin)) * ($("#bcBody").height() / 50));
+    }
+    if (chunk5Top < animMargin) {
+        $("#bcBody").css("opacity", ((chunk5Top / animMargin) - 0.5));
+    } else {
+        $("#bcBody").css("opacity", "1");
     }
 
     $("#bodyImg").css("marginTop", "-" + (offset * 10) + "px");
@@ -34,6 +40,9 @@ $("#viewBody").scroll(function() {
     $("#bcBody").css("marginLeft", (offset * 0) + "px");
 
     $("#bcTape").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
+    $("#bcTape2").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
+
+    $(".chunk2layer").css("top", $("#chunkTwo")[0].getBoundingClientRect().top + "px");
 
 });
 
@@ -61,6 +70,8 @@ $(window).resize(function() {
     $("#bcBody").css("top", ((($("#viewBody").height() - $("#navBar").height()) * 0.45) + $("#navBar").height() - ($("#bcBody").height() / 2) + "px"));
     $("#bcTape").css("left", ($("#bcBody")[0].getBoundingClientRect().left + ($("#bcBody").width() * 0.13)) + "px");
     $("#bcTape").css("width", ($("#bcBody").width() * 0.07) + "px");
+    $("#bcTape2").css("left", ($("#bcBody")[0].getBoundingClientRect().left + "px"));
+    $("#bcTape2").css("width", ($("#bcBody").width() * 0.07) + "px");
 });
 
 var screenRatio = $(window).width() / $(window).height();
@@ -90,3 +101,7 @@ $("#bcBody").css("top", ((($("#viewBody").height() - $("#navBar").height()) * 0.
 $("#bcTape").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
 $("#bcTape").css("left", ($("#bcBody")[0].getBoundingClientRect().left + ($("#bcBody").width() * 0.13)) + "px");
 $("#bcTape").css("width", ($("#bcBody").width() * 0.07) + "px");
+$("#bcTape2").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
+$("#bcTape2").css("left", ($("#bcBody")[0].getBoundingClientRect().left + "px"));
+$("#bcTape2").css("width", ($("#bcBody").width() * 0.07) + "px");
+$(".chunk2layer").css("top", $("#chunkTwo")[0].getBoundingClientRect().top + "px");
