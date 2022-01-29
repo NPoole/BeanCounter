@@ -109,6 +109,10 @@ section {
     background-color: rgb(255, 255, 255);
 }
 
+.chunk2layer {
+    z-index: 100;
+}
+
 #bcBody {
     display: block;
     position: fixed;
@@ -286,10 +290,6 @@ section {
     font-family: 'Seven Segment', sans-serif;
     letter-spacing: 0.1em;
     font-size: 16vw;
-}
-
-#preload {
-    visibility: hidden;
 }
 
 #xdim {

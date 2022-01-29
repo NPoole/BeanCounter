@@ -42,8 +42,6 @@ $("#viewBody").scroll(function() {
     $("#bcTape").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
     $("#bcTape2").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px");
 
-    $(".chunk2layer").css("top", $("#chunkTwo")[0].getBoundingClientRect().top + "px");
-
 });
 
 $(window).resize(function() {
@@ -72,6 +70,9 @@ $(window).resize(function() {
     $("#bcTape").css("width", ($("#bcBody").width() * 0.07) + "px");
     $("#bcTape2").css("left", ($("#bcBody")[0].getBoundingClientRect().left + "px"));
     $("#bcTape2").css("width", ($("#bcBody").width() * 0.07) + "px");
+    $("#ydim").css("width", $("#bcBody").css("width"));
+    $("#xdim").css("height", $("#bcBody").css("height"));
+    $("#cr2032").css("height", $("#bcBody").css("height"));
 });
 
 var screenRatio = $(window).width() / $(window).height();
@@ -105,3 +106,6 @@ $("#bcTape2").css("top", $("#chunkThree")[0].getBoundingClientRect().top + "px")
 $("#bcTape2").css("left", ($("#bcBody")[0].getBoundingClientRect().left + "px"));
 $("#bcTape2").css("width", ($("#bcBody").width() * 0.07) + "px");
 $(".chunk2layer").css("top", $("#chunkTwo")[0].getBoundingClientRect().top + "px");
+$("#ydim").css("width", $("#bcBody").css("width"));
+$("#xdim").css("height", $("#bcBody").css("height"));
+$("#cr2032").css("height", $("#bcBody").css("height"));
