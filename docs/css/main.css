@@ -111,6 +111,7 @@ section {
 
 .chunk2layer {
     z-index: 100;
+    display: none;
 }
 
 #bcBody {
@@ -293,13 +294,13 @@ section {
 }
 
 #xdim {
-    position: absolute;
+    position: fixed;
 }
 
 #ydim {
-    position: absolute;
+    position: fixed;
 }
 
 #cr2032 {
-    position: absolute;
+    position: fixed;
 }
