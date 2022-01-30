@@ -13,9 +13,9 @@ $("#viewBody").scroll(function() {
     }
 
     if ($("#viewBody").scrollTop() == $("#viewBody").height()) {
-        $(".chunk2layer").fadeIn();
+        $(".chunk2layer").show();
     } else {
-        $(".chunk2layer").fadeOut();
+        $(".chunk2layer").hide();
     }
 
     $("#bodyImg").css("marginTop", "-" + (offset * 10) + "px");
