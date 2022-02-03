@@ -12,7 +12,7 @@ $("#viewBody").scroll(function() {
         $("#bcBody").css("opacity", "1");
     }
 
-    if ($("#viewBody").scrollTop() > $("#viewBody").height() * 0.8 && $("#viewBody").scrollTop() < $("#viewBody").height() * 1.2) {
+    if ($("#viewBody").scrollTop() > $("#viewBody").height() * 0.5 && $("#viewBody").scrollTop() < $("#viewBody").height() * 1.5) {
         $(".chunk2layer").show();
     } else {
         $(".chunk2layer").hide();
