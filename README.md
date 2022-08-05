@@ -1,4 +1,7 @@
 # BeanCounter
+
+![BeanCounter Photo](https://github.com/NPoole/BeanCounter/blob/main/docs/beancounter-front.jpg)
+
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 A Simple, Affordable, Counter for Cut Tape and Partial Reels.
