@@ -156,6 +156,7 @@ void setup()
     pinMode(IRSENSOR_A, INPUT);
     pinMode(IRSENSOR_B, INPUT);
     loadSettings();
+    //digitalWrite(IRLED, 1);
 }
 
 // The main loop just manages the state machine
@@ -181,10 +182,10 @@ void loop()
         break;
     }
 
-    /* ADC TEST MODE 
-  translateSegments(analogRead(A9));
-  updateLED();  
-  */
+  //ADC TEST MODE 
+  //translateSegments(analogRead(A9));
+  //updateLED();  
+  
 }
 
 // Check EEPROM for user settings and load them
@@ -563,19 +564,19 @@ void updateCount()
         // assigning the state of each IR interruptor to a separate bit in 
         // a two bit binary number. This makes state transitions easier to 
         // track
-        if (adc_a > 150)
+        if (adc_a > 100)
         {
             state_a = 0b01;
         }
-        else if (adc_a < 100)
+        else if (adc_a < 50)
         {
             state_a = 0b00;
         }
-        if (adc_b > 150)
+        if (adc_b > 100)
         {
             state_b = 0b10;
         }
-        else if (adc_b < 100)
+        else if (adc_b < 50)
         {
             state_b = 0b00;
         }
@@ -625,11 +626,11 @@ void updateCount()
         bool bool_state_current;
 
         // We need to do the deadzone trick here as well for stability
-        if (adc_a > 150)
+        if (adc_a > 100)
         {
             bool_state_current = 1;
         }
-        else if (adc_a < 100)
+        else if (adc_a < 50)
         {
             bool_state_current = 0;
         }
