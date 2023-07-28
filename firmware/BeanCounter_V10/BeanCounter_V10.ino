@@ -156,6 +156,9 @@ void setup()
     pinMode(IRSENSOR_A, INPUT);
     pinMode(IRSENSOR_B, INPUT);
     loadSettings();
+    delay(50);
+    selfTest();
+    delay(50);
     //digitalWrite(IRLED, 1);
 }
 
@@ -281,6 +284,8 @@ void mode1()
 
     digitalWrite(IRLED, 1);
 
+    delay(50);
+
     while (deviceMode == 1)
     {
 
@@ -318,6 +323,7 @@ void mode2()
         delay(300);
         if (digitalRead(STARTBTN) == 1)
         {
+            selfTest();
             count = 0;
             displayBuf = 0;
             deviceMode = returnMode;
@@ -647,4 +653,41 @@ void updateCount()
             bool_state_previous = bool_state_current;
         }
     }
+}
+
+void selfTest()
+{
+  byte pass = 0;
+  
+  for (byte i = 0; i < 10; i++)
+  {
+    digitalWrite(IRLED, 1);
+    delay(20);
+    if ( analogRead(IRSENSOR_A) > 100 && analogRead(IRSENSOR_B) > 100 )
+    {
+      pass++;
+    }
+    digitalWrite(IRLED, 0);
+    delay(20);
+    if ( analogRead(IRSENSOR_A) < 50 && analogRead(IRSENSOR_B) < 50 )
+    {
+      pass++;
+    }
+  }
+
+  if (pass < 15)
+  {
+    digit1 = 0b00101111; // b
+    digit2 = 0b01111110; // A
+    digit3 = 0b00011010; // t
+    for(int i = 0; i < 500; i++){updateLED();}
+    digit1 = 0b01101101; // E
+    digit2 = 0b00001100; // r
+    digit3 = 0b00001100; // r
+    for(int i = 0; i < 500; i++){updateLED();}
+  }
+
+  digitalWrite(IRLED, 0);
+
+  return;
 }

@@ -1,0 +1,3367 @@
+
+C:\Users\USER\AppData\Local\Temp\arduino_build_613865/BeanCounter_V10.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	33 c0       	rjmp	.+102    	; 0x68 <__ctors_end>
+   2:	4d c0       	rjmp	.+154    	; 0x9e <__bad_interrupt>
+   4:	4c c0       	rjmp	.+152    	; 0x9e <__bad_interrupt>
+   6:	4b c0       	rjmp	.+150    	; 0x9e <__bad_interrupt>
+   8:	4a c0       	rjmp	.+148    	; 0x9e <__bad_interrupt>
+   a:	49 c0       	rjmp	.+146    	; 0x9e <__bad_interrupt>
+   c:	db c2       	rjmp	.+1462   	; 0x5c4 <__vector_6>
+   e:	47 c0       	rjmp	.+142    	; 0x9e <__bad_interrupt>
+  10:	46 c0       	rjmp	.+140    	; 0x9e <__bad_interrupt>
+  12:	45 c0       	rjmp	.+138    	; 0x9e <__bad_interrupt>
+  14:	44 c0       	rjmp	.+136    	; 0x9e <__bad_interrupt>
+  16:	43 c0       	rjmp	.+134    	; 0x9e <__bad_interrupt>
+  18:	42 c0       	rjmp	.+132    	; 0x9e <__bad_interrupt>
+  1a:	41 c0       	rjmp	.+130    	; 0x9e <__bad_interrupt>
+  1c:	40 c0       	rjmp	.+128    	; 0x9e <__bad_interrupt>
+  1e:	3f c0       	rjmp	.+126    	; 0x9e <__bad_interrupt>
+  20:	3e c0       	rjmp	.+124    	; 0x9e <__bad_interrupt>
+  22:	3d c0       	rjmp	.+122    	; 0x9e <__bad_interrupt>
+  24:	3c c0       	rjmp	.+120    	; 0x9e <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	00 00       	nop
+  28:	3a 00       	.word	0x003a	; ????
+  2a:	37 00       	.word	0x0037	; ????
+
+0000002c <port_to_output_PGM>:
+  2c:	00 00 3b 00 38 00                                   ..;.8.
+
+00000032 <digital_pin_to_timer_PGM>:
+	...
+  3a:	00 03 00 04 00 05 00 00                             ........
+
+00000042 <port_to_input_PGM>:
+  42:	00 00 39 00 36 00                                   ..9.6.
+
+00000048 <digital_pin_to_port_PGM>:
+  48:	01 01 01 01 01 01 01 01 02 02 02 02 02 02 02 02     ................
+
+00000058 <digital_pin_to_bit_mask_PGM>:
+  58:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 40 80     ..... @...... @.
+
+00000068 <__ctors_end>:
+__dtors_end():
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf e5       	ldi	r28, 0x5F	; 95
+  6e:	d2 e0       	ldi	r29, 0x02	; 2
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  74:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  76:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  78:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  7a:	e0 ef       	ldi	r30, 0xF0	; 240
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  7c:	fd e0       	ldi	r31, 0x0D	; 13
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  80:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  82:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  84:	a2 37       	cpi	r26, 0x72	; 114
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  86:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+
+0000008a <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  8a:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  8c:	a2 e7       	ldi	r26, 0x72	; 114
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  8e:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  90:	01 c0       	rjmp	.+2      	; 0x94 <.do_clear_bss_start>
+
+00000092 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  92:	1d 92       	st	X+, r1
+
+00000094 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  94:	a0 39       	cpi	r26, 0x90	; 144
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  96:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  98:	e1 f7       	brne	.-8      	; 0x92 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  9a:	de d2       	rcall	.+1468   	; 0x658 <main>
+  9c:	a7 c6       	rjmp	.+3406   	; 0xdec <_exit>
+
+0000009e <__bad_interrupt>:
+__vector_1():
+  9e:	b0 cf       	rjmp	.-160    	; 0x0 <__vectors>
+
+000000a0 <analogRead>:
+analogRead():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:66
+#define ADMUX_MUX_MASK (0x07)
+#endif
+
+int analogRead(uint8_t pin)
+{
+  pin &=127; //strip off the high bit of the A# constants
+  a0:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:72
+  #ifndef ADCSRA
+  return digitalRead(analogInputToDigitalPin(pin)) ? 1023 : 0; //No ADC, so read as a digital pin instead.
+  #endif
+
+  #if defined(ADMUX)
+  ADMUX = ((analog_reference & ADMUX_REFS_MASK) << REFS0) | ((pin & ADMUX_MUX_MASK) << MUX0); //select the channel and reference
+  a2:	87 b9       	out	0x07, r24	; 7
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:74
+  #if defined(REFS2)
+  ADMUX |= (((analog_reference & 0x04) >> 2) << REFS2); //some have an extra reference bit in a weird position.
+  a4:	87 b1       	in	r24, 0x07	; 7
+  a6:	87 b9       	out	0x07, r24	; 7
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:79
+  #endif
+  #endif
+
+  #if defined(HAVE_ADC) && HAVE_ADC
+  sbi(ADCSRA, ADSC); //Start conversion
+  a8:	36 9a       	sbi	0x06, 6	; 6
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:81
+
+  while(ADCSRA & (1<<ADSC)); //Wait for conversion to complete.
+  aa:	36 99       	sbic	0x06, 6	; 6
+  ac:	fe cf       	rjmp	.-4      	; 0xaa <analogRead+0xa>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:83
+
+  uint8_t low = ADCL;
+  ae:	84 b1       	in	r24, 0x04	; 4
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:84
+  uint8_t high = ADCH;
+  b0:	95 b1       	in	r25, 0x05	; 5
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_analog.c:89
+  return (high << 8) | low;
+  #else
+  return LOW;
+  #endif
+}
+  b2:	08 95       	ret
+
+000000b4 <delayMicroseconds>:
+delayMicroseconds():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:693
+  #elif F_CPU >= 16000000L
+    // for the 16 MHz clock on most Arduino boards
+
+    // for a one-microsecond delay, simply return.  the overhead
+    // of the function call takes 14 (16) cycles, which is 1us
+    if (us <= 1) return; //  = 3 cycles, (4 when true)
+  b4:	82 30       	cpi	r24, 0x02	; 2
+  b6:	91 05       	cpc	r25, r1
+  b8:	38 f0       	brcs	.+14     	; 0xc8 <delayMicroseconds+0x14>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:698
+
+    // the following loop takes 1/4 of a microsecond (4 cycles)
+    // per iteration, so execute it four times for each microsecond of
+    // delay requested.
+    us <<= 2; // x4 us, = 4 cycles
+  ba:	88 0f       	add	r24, r24
+  bc:	99 1f       	adc	r25, r25
+  be:	88 0f       	add	r24, r24
+  c0:	99 1f       	adc	r25, r25
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:703
+
+    // account for the time taken in the preceding commands.
+    // we just burned 19 (21) cycles above, remove 5, (5*4=20)
+    // us is at least 8 so we can subtract 5
+    us -= 5; // = 2 cycles,
+  c2:	05 97       	sbiw	r24, 0x05	; 5
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:833
+    // us is at least 4, divided by 4 gives us 1 (no zero delay bug)
+    us >>= 2; // us div 4, = 4 cycles
+  #endif
+
+  // busy wait
+  __asm__ __volatile__ (
+  c4:	01 97       	sbiw	r24, 0x01	; 1
+  c6:	f1 f7       	brne	.-4      	; 0xc4 <delayMicroseconds+0x10>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:839
+    "1: sbiw %0,1" "\n\t" // 2 cycles
+        _MORENOP_         // more cycles according to definition
+    "brne 1b" : "=w" (us) : "0" (us) // 2 cycles
+  );
+  // return = 4 cycles
+}
+  c8:	08 95       	ret
+
+000000ca <micros>:
+micros():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:360
+    unsigned int r; // needed for some frequencies, optimized away otherwise
+    unsigned char f; // temporary storage for millis fraction counter
+    unsigned char q = 0; // record whether an overflow is flagged
+#endif
+    unsigned long m;
+    uint8_t t, oldSREG = SREG;
+  ca:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:362
+
+    cli();
+  cc:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:367
+#ifdef CORRECT_EXACT_MICROS
+    m = millis_timer_millis;
+    f = millis_timer_fract;
+#else
+    m = millis_timer_overflow_count;
+  ce:	80 91 78 00 	lds	r24, 0x0078	; 0x800078 <millis_timer_overflow_count>
+  d2:	90 91 79 00 	lds	r25, 0x0079	; 0x800079 <millis_timer_overflow_count+0x1>
+  d6:	a0 91 7a 00 	lds	r26, 0x007A	; 0x80007a <millis_timer_overflow_count+0x2>
+  da:	b0 91 7b 00 	lds	r27, 0x007B	; 0x80007b <millis_timer_overflow_count+0x3>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:372
+#endif
+  #if defined(TCNT0) && (TIMER_TO_USE_FOR_MILLIS == 0) && !defined(TCW0)
+    t = TCNT0;
+  #elif defined(TCNT0L) && (TIMER_TO_USE_FOR_MILLIS == 0)
+    t = TCNT0L;
+  de:	22 b7       	in	r18, 0x32	; 50
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:389
+      m++;
+    #else
+      q = 1;
+    #endif
+  #elif defined(TIFR) && (TIMER_TO_USE_FOR_MILLIS == 0)
+    if ((TIFR & _BV(TOV0)) && (t < 255))
+  e0:	08 b6       	in	r0, 0x38	; 56
+  e2:	01 fe       	sbrs	r0, 1
+  e4:	05 c0       	rjmp	.+10     	; 0xf0 <micros+0x26>
+  e6:	2f 3f       	cpi	r18, 0xFF	; 255
+  e8:	19 f0       	breq	.+6      	; 0xf0 <micros+0x26>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:391
+    #ifndef CORRECT_EXACT_MICROS
+      m++;
+  ea:	01 96       	adiw	r24, 0x01	; 1
+  ec:	a1 1d       	adc	r26, r1
+  ee:	b1 1d       	adc	r27, r1
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:411
+    #else
+      q = 1;
+    #endif
+  #endif
+
+    SREG = oldSREG;
+  f0:	3f bf       	out	0x3f, r19	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:453
+  #else
+  #if F_CPU < 1000000L
+    return ((m << 8) + t) * MillisTimer_Prescale_Value * (1000000L/F_CPU);
+  #else
+    #if (MillisTimer_Prescale_Value % clockCyclesPerMicrosecond() == 0 && (F_CPU % 1000000 == 0 )) // Can we just do it the naive way? If so great!
+      return ((m << 8) + t) * (MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+  f2:	ba 2f       	mov	r27, r26
+  f4:	a9 2f       	mov	r26, r25
+  f6:	98 2f       	mov	r25, r24
+  f8:	88 27       	eor	r24, r24
+  fa:	bc 01       	movw	r22, r24
+  fc:	cd 01       	movw	r24, r26
+  fe:	62 0f       	add	r22, r18
+ 100:	71 1d       	adc	r23, r1
+ 102:	81 1d       	adc	r24, r1
+ 104:	91 1d       	adc	r25, r1
+ 106:	42 e0       	ldi	r20, 0x02	; 2
+ 108:	66 0f       	add	r22, r22
+ 10a:	77 1f       	adc	r23, r23
+ 10c:	88 1f       	adc	r24, r24
+ 10e:	99 1f       	adc	r25, r25
+ 110:	4a 95       	dec	r20
+ 112:	d1 f7       	brne	.-12     	; 0x108 <micros+0x3e>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:508
+      //return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + ((t+(((m<<8)%clockCyclesPerMicrosecond())) * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond()));
+      return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + (t * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+    #endif
+  #endif
+  #endif // !CORRECT_EXACT_MICROS
+  }
+ 114:	08 95       	ret
+
+00000116 <delay>:
+delay():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:516
+    // Empty
+  }
+  void yield(void) __attribute__ ((weak, alias("__empty")));
+
+  void delay(unsigned long ms)
+  {
+ 116:	cf 92       	push	r12
+ 118:	df 92       	push	r13
+ 11a:	ef 92       	push	r14
+ 11c:	ff 92       	push	r15
+ 11e:	cf 93       	push	r28
+ 120:	df 93       	push	r29
+ 122:	6b 01       	movw	r12, r22
+ 124:	7c 01       	movw	r14, r24
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:518
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+ 126:	d1 df       	rcall	.-94     	; 0xca <micros>
+ 128:	eb 01       	movw	r28, r22
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:522
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+ 12a:	cf df       	rcall	.-98     	; 0xca <micros>
+ 12c:	6c 1b       	sub	r22, r28
+ 12e:	7d 0b       	sbc	r23, r29
+ 130:	68 3e       	cpi	r22, 0xE8	; 232
+ 132:	73 40       	sbci	r23, 0x03	; 3
+ 134:	a0 f0       	brcs	.+40     	; 0x15e <delay+0x48>
+ 136:	c1 14       	cp	r12, r1
+ 138:	d1 04       	cpc	r13, r1
+ 13a:	e1 04       	cpc	r14, r1
+ 13c:	f1 04       	cpc	r15, r1
+ 13e:	39 f4       	brne	.+14     	; 0x14e <delay+0x38>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:532
+    #else
+    uint32_t start = millis();
+    while((millis() - start) < ms)  /* NOP */yield();
+    return;
+    #endif
+  }
+ 140:	df 91       	pop	r29
+ 142:	cf 91       	pop	r28
+ 144:	ff 90       	pop	r15
+ 146:	ef 90       	pop	r14
+ 148:	df 90       	pop	r13
+ 14a:	cf 90       	pop	r12
+ 14c:	08 95       	ret
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:523
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+        ms--;
+ 14e:	81 e0       	ldi	r24, 0x01	; 1
+ 150:	c8 1a       	sub	r12, r24
+ 152:	d1 08       	sbc	r13, r1
+ 154:	e1 08       	sbc	r14, r1
+ 156:	f1 08       	sbc	r15, r1
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:524
+        start += 1000;
+ 158:	c8 51       	subi	r28, 0x18	; 24
+ 15a:	dc 4f       	sbci	r29, 0xFC	; 252
+ 15c:	e6 cf       	rjmp	.-52     	; 0x12a <delay+0x14>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:520
+  void delay(unsigned long ms)
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+ 15e:	c1 14       	cp	r12, r1
+ 160:	d1 04       	cpc	r13, r1
+ 162:	e1 04       	cpc	r14, r1
+ 164:	f1 04       	cpc	r15, r1
+ 166:	09 f7       	brne	.-62     	; 0x12a <delay+0x14>
+ 168:	eb cf       	rjmp	.-42     	; 0x140 <delay+0x2a>
+
+0000016a <updateCount()>:
+updateCount():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:552
+// with the carrier tape. This allows us to determine the direction
+// of the tape at the expense of counting more slowly. Also, because
+// end/start of tape transitions look identical to motion in the
+// opposite direction, we can't correctly count end/start of tape.
+void updateCount()
+{
+ 16a:	cf 93       	push	r28
+ 16c:	df 93       	push	r29
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:554
+
+    if (countingMode == 1)
+ 16e:	c0 91 81 00 	lds	r28, 0x0081	; 0x800081 <countingMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:559
+    {
+
+        /**************** Dispense Mode ****************/
+        // Fetch the ADC
+        int adc_a = analogRead(IRSENSOR_A); 
+ 172:	89 e8       	ldi	r24, 0x89	; 137
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:554
+// end/start of tape transitions look identical to motion in the
+// opposite direction, we can't correctly count end/start of tape.
+void updateCount()
+{
+
+    if (countingMode == 1)
+ 174:	cc 23       	and	r28, r28
+ 176:	09 f4       	brne	.+2      	; 0x17a <updateCount()+0x10>
+ 178:	58 c0       	rjmp	.+176    	; 0x22a <updateCount()+0xc0>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:559
+    {
+
+        /**************** Dispense Mode ****************/
+        // Fetch the ADC
+        int adc_a = analogRead(IRSENSOR_A); 
+ 17a:	92 df       	rcall	.-220    	; 0xa0 <analogRead>
+ 17c:	ec 01       	movw	r28, r24
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:560
+        int adc_b = analogRead(IRSENSOR_B);
+ 17e:	86 e8       	ldi	r24, 0x86	; 134
+ 180:	8f df       	rcall	.-226    	; 0xa0 <analogRead>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:573
+        // "counting" parts at 1/2 polling speed.
+        // The state values may look like nonsense but it's really just 
+        // assigning the state of each IR interruptor to a separate bit in 
+        // a two bit binary number. This makes state transitions easier to 
+        // track
+        if (adc_a > 100)
+ 182:	c5 36       	cpi	r28, 0x65	; 101
+ 184:	d1 05       	cpc	r29, r1
+ 186:	ec f0       	brlt	.+58     	; 0x1c2 <updateCount()+0x58>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:575
+        {
+            state_a = 0b01;
+ 188:	21 e0       	ldi	r18, 0x01	; 1
+ 18a:	20 93 61 00 	sts	0x0061, r18	; 0x800061 <state_a>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:581
+        }
+        else if (adc_a < 50)
+        {
+            state_a = 0b00;
+        }
+        if (adc_b > 100)
+ 18e:	85 36       	cpi	r24, 0x65	; 101
+ 190:	91 05       	cpc	r25, r1
+ 192:	e4 f0       	brlt	.+56     	; 0x1cc <updateCount()+0x62>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:583
+        {
+            state_b = 0b10;
+ 194:	82 e0       	ldi	r24, 0x02	; 2
+ 196:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:590
+        else if (adc_b < 50)
+        {
+            state_b = 0b00;
+        }
+
+        byte state_current = state_a + state_b;
+ 19a:	c0 91 61 00 	lds	r28, 0x0061	; 0x800061 <state_a>
+ 19e:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 1a2:	c8 0f       	add	r28, r24
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:594
+
+        // If the state we just measured is different than the last time we were 
+        // polled, it means the tape has moved! Time to count!
+        if (state_current != state_previous)
+ 1a4:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <__data_end>
+ 1a8:	c8 17       	cp	r28, r24
+ 1aa:	41 f0       	breq	.+16     	; 0x1bc <updateCount()+0x52>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:604
+            // 00 10 11 01
+            // but because of the geometry involved, the "00" 
+            // state is very short, we shouldn't rely on detecting 
+            // it. So we only increment/decrement on the transition 
+            // out of "11" which is our longest state.
+            if (state_previous == 0b11)
+ 1ac:	83 30       	cpi	r24, 0x03	; 3
+ 1ae:	21 f4       	brne	.+8      	; 0x1b8 <updateCount()+0x4e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:606
+            {
+                switch (state_current)
+ 1b0:	c1 30       	cpi	r28, 0x01	; 1
+ 1b2:	89 f0       	breq	.+34     	; 0x1d6 <updateCount()+0x6c>
+ 1b4:	c2 30       	cpi	r28, 0x02	; 2
+ 1b6:	91 f1       	breq	.+100    	; 0x21c <updateCount()+0xb2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:621
+                    count--;
+                    displayBuf = abs(count) * ratio;
+                    break;
+                }
+            }
+            state_previous = state_current;
+ 1b8:	c0 93 72 00 	sts	0x0072, r28	; 0x800072 <__data_end>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:656
+                displayBuf = count * ratio; // multiply by hole-to-part ratio
+            }
+            bool_state_previous = bool_state_current;
+        }
+    }
+}
+ 1bc:	df 91       	pop	r29
+ 1be:	cf 91       	pop	r28
+ 1c0:	08 95       	ret
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:577
+        // track
+        if (adc_a > 100)
+        {
+            state_a = 0b01;
+        }
+        else if (adc_a < 50)
+ 1c2:	e2 97       	sbiw	r28, 0x32	; 50
+ 1c4:	24 f7       	brge	.-56     	; 0x18e <updateCount()+0x24>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:579
+        {
+            state_a = 0b00;
+ 1c6:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <state_a>
+ 1ca:	e1 cf       	rjmp	.-62     	; 0x18e <updateCount()+0x24>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:585
+        }
+        if (adc_b > 100)
+        {
+            state_b = 0b10;
+        }
+        else if (adc_b < 50)
+ 1cc:	c2 97       	sbiw	r24, 0x32	; 50
+ 1ce:	2c f7       	brge	.-54     	; 0x19a <updateCount()+0x30>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:587
+        {
+            state_b = 0b00;
+ 1d0:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 1d4:	e2 cf       	rjmp	.-60     	; 0x19a <updateCount()+0x30>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:609
+            if (state_previous == 0b11)
+            {
+                switch (state_current)
+                {
+                case 0b01:
+                    count++;
+ 1d6:	60 91 7f 00 	lds	r22, 0x007F	; 0x80007f <count>
+ 1da:	70 91 80 00 	lds	r23, 0x0080	; 0x800080 <count+0x1>
+ 1de:	6f 5f       	subi	r22, 0xFF	; 255
+ 1e0:	7f 4f       	sbci	r23, 0xFF	; 255
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:616
+                    // so instead we just count into the negative and 
+                    // display the absolute value
+                    displayBuf = abs(count) * ratio; // multiply by hole-to-part ratio
+                    break;
+                case 0b10:
+                    count--;
+ 1e2:	70 93 80 00 	sts	0x0080, r23	; 0x800080 <count+0x1>
+ 1e6:	60 93 7f 00 	sts	0x007F, r22	; 0x80007f <count>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:617
+                    displayBuf = abs(count) * ratio;
+ 1ea:	77 ff       	sbrs	r23, 7
+ 1ec:	03 c0       	rjmp	.+6      	; 0x1f4 <updateCount()+0x8a>
+ 1ee:	71 95       	neg	r23
+ 1f0:	61 95       	neg	r22
+ 1f2:	71 09       	sbc	r23, r1
+ 1f4:	07 2e       	mov	r0, r23
+ 1f6:	00 0c       	add	r0, r0
+ 1f8:	88 0b       	sbc	r24, r24
+ 1fa:	99 0b       	sbc	r25, r25
+ 1fc:	d9 d4       	rcall	.+2482   	; 0xbb0 <__floatsisf>
+ 1fe:	20 91 63 00 	lds	r18, 0x0063	; 0x800063 <ratio>
+ 202:	30 91 64 00 	lds	r19, 0x0064	; 0x800064 <ratio+0x1>
+ 206:	40 91 65 00 	lds	r20, 0x0065	; 0x800065 <ratio+0x2>
+ 20a:	50 91 66 00 	lds	r21, 0x0066	; 0x800066 <ratio+0x3>
+ 20e:	5c d5       	rcall	.+2744   	; 0xcc8 <__mulsf3>
+ 210:	9c d4       	rcall	.+2360   	; 0xb4a <__fixsfsi>
+ 212:	70 93 7e 00 	sts	0x007E, r23	; 0x80007e <displayBuf+0x1>
+ 216:	60 93 7d 00 	sts	0x007D, r22	; 0x80007d <displayBuf>
+ 21a:	ce cf       	rjmp	.-100    	; 0x1b8 <updateCount()+0x4e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:616
+                    // so instead we just count into the negative and 
+                    // display the absolute value
+                    displayBuf = abs(count) * ratio; // multiply by hole-to-part ratio
+                    break;
+                case 0b10:
+                    count--;
+ 21c:	60 91 7f 00 	lds	r22, 0x007F	; 0x80007f <count>
+ 220:	70 91 80 00 	lds	r23, 0x0080	; 0x800080 <count+0x1>
+ 224:	61 50       	subi	r22, 0x01	; 1
+ 226:	71 09       	sbc	r23, r1
+ 228:	dc cf       	rjmp	.-72     	; 0x1e2 <updateCount()+0x78>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:629
+    }
+    else
+    {
+        /**************** Inventory Mode ****************/
+        // Fetch the ADC
+        int adc_a = analogRead(IRSENSOR_A);
+ 22a:	3a df       	rcall	.-396    	; 0xa0 <analogRead>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:635
+
+        // Create a bool to store the sensor state
+        bool bool_state_current;
+
+        // We need to do the deadzone trick here as well for stability
+        if (adc_a > 100)
+ 22c:	85 36       	cpi	r24, 0x65	; 101
+ 22e:	91 05       	cpc	r25, r1
+ 230:	0c f0       	brlt	.+2      	; 0x234 <updateCount()+0xca>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:637
+        {
+            bool_state_current = 1;
+ 232:	c1 e0       	ldi	r28, 0x01	; 1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:646
+            bool_state_current = 0;
+        }
+        
+        // If the state we just measured is different than the last time we were 
+        // polled, it means the tape has moved! Time to count!
+        if (bool_state_current != bool_state_previous)
+ 234:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <bool_state_previous>
+ 238:	8c 17       	cp	r24, r28
+ 23a:	09 f4       	brne	.+2      	; 0x23e <updateCount()+0xd4>
+ 23c:	bf cf       	rjmp	.-130    	; 0x1bc <updateCount()+0x52>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:648
+        {
+            if (bool_state_current == 1)
+ 23e:	cc 23       	and	r28, r28
+ 240:	e9 f0       	breq	.+58     	; 0x27c <__stack+0x1d>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:650
+            {
+                count++;
+ 242:	60 91 7f 00 	lds	r22, 0x007F	; 0x80007f <count>
+ 246:	70 91 80 00 	lds	r23, 0x0080	; 0x800080 <count+0x1>
+ 24a:	6f 5f       	subi	r22, 0xFF	; 255
+ 24c:	7f 4f       	sbci	r23, 0xFF	; 255
+ 24e:	70 93 80 00 	sts	0x0080, r23	; 0x800080 <count+0x1>
+ 252:	60 93 7f 00 	sts	0x007F, r22	; 0x80007f <count>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:651
+                displayBuf = count * ratio; // multiply by hole-to-part ratio
+ 256:	07 2e       	mov	r0, r23
+ 258:	00 0c       	add	r0, r0
+ 25a:	88 0b       	sbc	r24, r24
+ 25c:	99 0b       	sbc	r25, r25
+ 25e:	a8 d4       	rcall	.+2384   	; 0xbb0 <__floatsisf>
+ 260:	20 91 63 00 	lds	r18, 0x0063	; 0x800063 <ratio>
+ 264:	30 91 64 00 	lds	r19, 0x0064	; 0x800064 <ratio+0x1>
+ 268:	40 91 65 00 	lds	r20, 0x0065	; 0x800065 <ratio+0x2>
+ 26c:	50 91 66 00 	lds	r21, 0x0066	; 0x800066 <ratio+0x3>
+ 270:	2b d5       	rcall	.+2646   	; 0xcc8 <__mulsf3>
+ 272:	6b d4       	rcall	.+2262   	; 0xb4a <__fixsfsi>
+ 274:	70 93 7e 00 	sts	0x007E, r23	; 0x80007e <displayBuf+0x1>
+ 278:	60 93 7d 00 	sts	0x007D, r22	; 0x80007d <displayBuf>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:653
+            }
+            bool_state_previous = bool_state_current;
+ 27c:	c0 93 62 00 	sts	0x0062, r28	; 0x800062 <bool_state_previous>
+ 280:	9d cf       	rjmp	.-198    	; 0x1bc <updateCount()+0x52>
+
+00000282 <numPositions(int)>:
+numPositions():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:522
+}
+
+// This method takes an integer as an argument and returns
+// an array of digits organized by decimal place.
+void numPositions(int num)
+{
+ 282:	cf 93       	push	r28
+ 284:	df 93       	push	r29
+ 286:	e5 e8       	ldi	r30, 0x85	; 133
+ 288:	f0 e0       	ldi	r31, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:525
+    for (int i = 0; i < 10; i++)
+    {
+        numPos[i] = 0;
+ 28a:	11 92       	st	Z+, r1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:523
+
+// This method takes an integer as an argument and returns
+// an array of digits organized by decimal place.
+void numPositions(int num)
+{
+    for (int i = 0; i < 10; i++)
+ 28c:	20 e0       	ldi	r18, 0x00	; 0
+ 28e:	ef 38       	cpi	r30, 0x8F	; 143
+ 290:	f2 07       	cpc	r31, r18
+ 292:	d9 f7       	brne	.-10     	; 0x28a <numPositions(int)+0x8>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:527
+    {
+        numPos[i] = 0;
+    }
+    byte pos = 0;
+ 294:	20 e0       	ldi	r18, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:530
+    while (num != 0)
+    {
+        numPos[pos] = num % 10;
+ 296:	ca e0       	ldi	r28, 0x0A	; 10
+ 298:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:528
+    for (int i = 0; i < 10; i++)
+    {
+        numPos[i] = 0;
+    }
+    byte pos = 0;
+    while (num != 0)
+ 29a:	00 97       	sbiw	r24, 0x00	; 0
+ 29c:	51 f0       	breq	.+20     	; 0x2b2 <numPositions(int)+0x30>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:530
+    {
+        numPos[pos] = num % 10;
+ 29e:	e2 2f       	mov	r30, r18
+ 2a0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2a2:	eb 57       	subi	r30, 0x7B	; 123
+ 2a4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2a6:	be 01       	movw	r22, r28
+ 2a8:	7a d5       	rcall	.+2804   	; 0xd9e <__divmodhi4>
+ 2aa:	80 83       	st	Z, r24
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:531
+        num = num / 10;
+ 2ac:	cb 01       	movw	r24, r22
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:532
+        pos++;
+ 2ae:	2f 5f       	subi	r18, 0xFF	; 255
+ 2b0:	f4 cf       	rjmp	.-24     	; 0x29a <numPositions(int)+0x18>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:535
+    }
+    return;
+}
+ 2b2:	df 91       	pop	r29
+ 2b4:	cf 91       	pop	r28
+ 2b6:	08 95       	ret
+
+000002b8 <translateSegments(int)>:
+translateSegments():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:451
+// result array numPos[], translated into a String of LED
+// segment states by segLUT[] and assigned to a
+// display digit
+void translateSegments(int displayBuf)
+{
+    numPositions(displayBuf);
+ 2b8:	e4 df       	rcall	.-56     	; 0x282 <numPositions(int)>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:452
+    digit3 = segLUT[numPos[0]];
+ 2ba:	a5 e8       	ldi	r26, 0x85	; 133
+ 2bc:	b0 e0       	ldi	r27, 0x00	; 0
+ 2be:	ec 91       	ld	r30, X
+ 2c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2c2:	e8 59       	subi	r30, 0x98	; 152
+ 2c4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2c6:	80 81       	ld	r24, Z
+ 2c8:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <digit3>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:453
+    digit2 = segLUT[numPos[1]];
+ 2cc:	11 96       	adiw	r26, 0x01	; 1
+ 2ce:	ec 91       	ld	r30, X
+ 2d0:	11 97       	sbiw	r26, 0x01	; 1
+ 2d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d4:	e8 59       	subi	r30, 0x98	; 152
+ 2d6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2d8:	80 81       	ld	r24, Z
+ 2da:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:454
+    digit1 = segLUT[numPos[2]];
+ 2de:	12 96       	adiw	r26, 0x02	; 2
+ 2e0:	ec 91       	ld	r30, X
+ 2e2:	f0 e0       	ldi	r31, 0x00	; 0
+ 2e4:	e8 59       	subi	r30, 0x98	; 152
+ 2e6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2e8:	80 81       	ld	r24, Z
+ 2ea:	80 93 82 00 	sts	0x0082, r24	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:455
+}
+ 2ee:	08 95       	ret
+
+000002f0 <unsigned char& EEPROMClass::get<unsigned char>(int, unsigned char&) [clone .isra.3]>:
+_ZN11EEPROMClass3getIhEERT_iS2_.isra.3():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:145
+    EEPtr begin()                        { return 0x00; }
+    EEPtr end()                          { return length(); } //Standards requires this to be the item after the last valid entry. The returned pointer is invalid.
+    uint16_t length()                    { return E2END + 1; }
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+ 2f0:	cf 93       	push	r28
+ 2f2:	df 93       	push	r29
+ 2f4:	eb 01       	movw	r28, r22
+operator*():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ 2f6:	ab d3       	rcall	.+1878   	; 0xa4e <eeprom_read_byte>
+_ZN11EEPROMClass3getIhEERT_iS2_.isra.3():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:148
+
+    //Functionality to 'get' and 'put' objects to and from EEPROM.
+    template< typename T > T &get( int idx, T &t ){
+        EEPtr e = idx;
+        uint8_t *ptr = (uint8_t*) &t;
+        for( int count = sizeof(T) ; count ; --count, ++e )  *ptr++ = *e;
+ 2f8:	88 83       	st	Y, r24
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:150
+        return t;
+    }
+ 2fa:	ce 01       	movw	r24, r28
+ 2fc:	df 91       	pop	r29
+ 2fe:	cf 91       	pop	r28
+ 300:	08 95       	ret
+
+00000302 <digitalRead>:
+digitalRead():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:169
+
+int digitalRead(uint8_t pin)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+ 302:	90 e0       	ldi	r25, 0x00	; 0
+ 304:	fc 01       	movw	r30, r24
+ 306:	e8 5a       	subi	r30, 0xA8	; 168
+ 308:	ff 4f       	sbci	r31, 0xFF	; 255
+ 30a:	24 91       	lpm	r18, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:170
+  uint8_t port = digitalPinToPort(pin);
+ 30c:	fc 01       	movw	r30, r24
+ 30e:	e8 5b       	subi	r30, 0xB8	; 184
+ 310:	ff 4f       	sbci	r31, 0xFF	; 255
+ 312:	e4 91       	lpm	r30, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:172
+
+  if (port == NOT_A_PIN) return LOW;
+ 314:	ee 23       	and	r30, r30
+ 316:	71 f0       	breq	.+28     	; 0x334 <digitalRead+0x32>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:180
+  // "read" should *NEVER* change the behavior of the thing you're using it on.
+  // That's why it's called "read" not "write". As an added bonus, sets the
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+ 318:	f0 e0       	ldi	r31, 0x00	; 0
+ 31a:	ee 0f       	add	r30, r30
+ 31c:	ff 1f       	adc	r31, r31
+ 31e:	ee 5b       	subi	r30, 0xBE	; 190
+ 320:	ff 4f       	sbci	r31, 0xFF	; 255
+ 322:	a5 91       	lpm	r26, Z+
+ 324:	b4 91       	lpm	r27, Z
+ 326:	ec 91       	ld	r30, X
+ 328:	e2 23       	and	r30, r18
+ 32a:	81 e0       	ldi	r24, 0x01	; 1
+ 32c:	90 e0       	ldi	r25, 0x00	; 0
+ 32e:	21 f4       	brne	.+8      	; 0x338 <digitalRead+0x36>
+ 330:	80 e0       	ldi	r24, 0x00	; 0
+ 332:	08 95       	ret
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:172
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+ 334:	80 e0       	ldi	r24, 0x00	; 0
+ 336:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:182
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  return LOW;
+}
+ 338:	08 95       	ret
+
+0000033a <digitalWrite>:
+digitalWrite():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:139
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+ 33a:	90 e0       	ldi	r25, 0x00	; 0
+ 33c:	fc 01       	movw	r30, r24
+ 33e:	ee 5c       	subi	r30, 0xCE	; 206
+ 340:	ff 4f       	sbci	r31, 0xFF	; 255
+ 342:	34 91       	lpm	r19, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 344:	fc 01       	movw	r30, r24
+ 346:	e8 5a       	subi	r30, 0xA8	; 168
+ 348:	ff 4f       	sbci	r31, 0xFF	; 255
+ 34a:	24 91       	lpm	r18, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 34c:	fc 01       	movw	r30, r24
+ 34e:	e8 5b       	subi	r30, 0xB8	; 184
+ 350:	ff 4f       	sbci	r31, 0xFF	; 255
+ 352:	e4 91       	lpm	r30, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 354:	ee 23       	and	r30, r30
+ 356:	c1 f0       	breq	.+48     	; 0x388 <digitalWrite+0x4e>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 358:	33 23       	and	r19, r19
+ 35a:	29 f0       	breq	.+10     	; 0x366 <digitalWrite+0x2c>
+turnOffPWM():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:90
+    // This can be recoded to use the OCOEn bits in TCCR1E
+    // This would be much better - then we'd leave COM bits at 0, and just switch on and off the OCOEn bits
+    // In this case, we would use WGM10 or WGM11 (PWM6 mode). Only one duty cycle could be output on each of the three pairs of
+    // PWM pins, but it gives you more choice on which pins you use. Would implement it like we do on x7, ie, if you analogWrite()
+    // both pins, and didn't turn off PWM between with digitalWrite(), you'd have identical waveform on the two pins.
+    if( timer == TIMER1A){
+ 35c:	33 30       	cpi	r19, 0x03	; 3
+ 35e:	a9 f4       	brne	.+42     	; 0x38a <digitalWrite+0x50>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:92
+      // disconnect pwm to pin on timer 1, channel A
+      TCCR1C &= ~(1<<COM1A1S);
+ 360:	87 b5       	in	r24, 0x27	; 39
+ 362:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:100
+      // disconnect pwm to pin on timer 1, channel B
+      TCCR1C &= ~(1<<COM1B1S);
+      //cbi(TCCR1C,COM1B0S);
+    } else if (timer == TIMER1D){
+      // disconnect pwm to pin on timer 1, channel D
+      TCCR1C &= ~(1<<COM1D1);
+ 364:	87 bd       	out	0x27, r24	; 39
+digitalWrite():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 366:	f0 e0       	ldi	r31, 0x00	; 0
+ 368:	ee 0f       	add	r30, r30
+ 36a:	ff 1f       	adc	r31, r31
+ 36c:	e4 5d       	subi	r30, 0xD4	; 212
+ 36e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 370:	a5 91       	lpm	r26, Z+
+ 372:	b4 91       	lpm	r27, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+ 374:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+ 376:	61 11       	cpse	r22, r1
+ 378:	12 c0       	rjmp	.+36     	; 0x39e <digitalWrite+0x64>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:154
+    uint8_t oldSREG = SREG;
+    cli();
+ 37a:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 37c:	9c 91       	ld	r25, X
+ 37e:	e2 2f       	mov	r30, r18
+ 380:	e0 95       	com	r30
+ 382:	e9 23       	and	r30, r25
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+ 384:	ec 93       	st	X, r30
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 386:	8f bf       	out	0x3f, r24	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:163
+  }
+}
+ 388:	08 95       	ret
+turnOffPWM():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:94
+    // both pins, and didn't turn off PWM between with digitalWrite(), you'd have identical waveform on the two pins.
+    if( timer == TIMER1A){
+      // disconnect pwm to pin on timer 1, channel A
+      TCCR1C &= ~(1<<COM1A1S);
+      //cbi(TCCR1C,COM1A0S);
+    } else if (timer == TIMER1B){
+ 38a:	34 30       	cpi	r19, 0x04	; 4
+ 38c:	19 f4       	brne	.+6      	; 0x394 <digitalWrite+0x5a>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:96
+      // disconnect pwm to pin on timer 1, channel B
+      TCCR1C &= ~(1<<COM1B1S);
+ 38e:	87 b5       	in	r24, 0x27	; 39
+ 390:	8f 7d       	andi	r24, 0xDF	; 223
+ 392:	e8 cf       	rjmp	.-48     	; 0x364 <digitalWrite+0x2a>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:98
+      //cbi(TCCR1C,COM1B0S);
+    } else if (timer == TIMER1D){
+ 394:	35 30       	cpi	r19, 0x05	; 5
+ 396:	39 f7       	brne	.-50     	; 0x366 <digitalWrite+0x2c>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:100
+      // disconnect pwm to pin on timer 1, channel D
+      TCCR1C &= ~(1<<COM1D1);
+ 398:	87 b5       	in	r24, 0x27	; 39
+ 39a:	87 7f       	andi	r24, 0xF7	; 247
+ 39c:	e3 cf       	rjmp	.-58     	; 0x364 <digitalWrite+0x2a>
+digitalWrite():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:159
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+ 39e:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 3a0:	ec 91       	ld	r30, X
+ 3a2:	e2 2b       	or	r30, r18
+ 3a4:	ef cf       	rjmp	.-34     	; 0x384 <digitalWrite+0x4a>
+
+000003a6 <updateLED()>:
+updateLED():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:468
+// is to poll the IR interruptors as often as possible. Luckily, we
+// need to be busy periodically between updating each digit of the
+// display, so we use that time to do our counting. If we don't need to
+// be coounting, we busywait instead.
+void updateLED()
+{
+ 3a6:	ff 92       	push	r15
+ 3a8:	0f 93       	push	r16
+ 3aa:	1f 93       	push	r17
+ 3ac:	cf 93       	push	r28
+ 3ae:	df 93       	push	r29
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:470
+
+    for (int i = 0; i < 7; i++)
+ 3b0:	d0 e0       	ldi	r29, 0x00	; 0
+ 3b2:	c0 e0       	ldi	r28, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:472
+    {
+        digitalWrite(i, bitRead(digit1, 6-i));
+ 3b4:	06 e0       	ldi	r16, 0x06	; 6
+ 3b6:	10 e0       	ldi	r17, 0x00	; 0
+ 3b8:	60 91 82 00 	lds	r22, 0x0082	; 0x800082 <digit1>
+ 3bc:	70 e0       	ldi	r23, 0x00	; 0
+ 3be:	c8 01       	movw	r24, r16
+ 3c0:	8c 1b       	sub	r24, r28
+ 3c2:	9d 0b       	sbc	r25, r29
+ 3c4:	02 c0       	rjmp	.+4      	; 0x3ca <updateLED()+0x24>
+ 3c6:	75 95       	asr	r23
+ 3c8:	67 95       	ror	r22
+ 3ca:	8a 95       	dec	r24
+ 3cc:	e2 f7       	brpl	.-8      	; 0x3c6 <updateLED()+0x20>
+ 3ce:	61 70       	andi	r22, 0x01	; 1
+ 3d0:	8c 2f       	mov	r24, r28
+ 3d2:	b3 df       	rcall	.-154    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:470
+// display, so we use that time to do our counting. If we don't need to
+// be coounting, we busywait instead.
+void updateLED()
+{
+
+    for (int i = 0; i < 7; i++)
+ 3d4:	21 96       	adiw	r28, 0x01	; 1
+ 3d6:	c7 30       	cpi	r28, 0x07	; 7
+ 3d8:	d1 05       	cpc	r29, r1
+ 3da:	71 f7       	brne	.-36     	; 0x3b8 <updateLED()+0x12>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:475
+    {
+        digitalWrite(i, bitRead(digit1, 6-i));
+    }
+
+    digitalWrite(DIGIT1_CATHODE, 1);
+ 3dc:	61 e0       	ldi	r22, 0x01	; 1
+ 3de:	88 e0       	ldi	r24, 0x08	; 8
+ 3e0:	ac df       	rcall	.-168    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:476
+    if (deviceMode == 1)
+ 3e2:	f0 90 8f 00 	lds	r15, 0x008F	; 0x80008f <deviceMode>
+ 3e6:	81 e0       	ldi	r24, 0x01	; 1
+ 3e8:	f8 12       	cpse	r15, r24
+ 3ea:	4a c0       	rjmp	.+148    	; 0x480 <__LOCK_REGION_LENGTH__+0x80>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:478
+    {
+        updateCount();
+ 3ec:	be de       	rcall	.-644    	; 0x16a <updateCount()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:484
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT1_CATHODE, 0);
+ 3ee:	60 e0       	ldi	r22, 0x00	; 0
+ 3f0:	88 e0       	ldi	r24, 0x08	; 8
+ 3f2:	a3 df       	rcall	.-186    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:486
+
+    for (int i = 0; i < 7; i++)
+ 3f4:	10 e0       	ldi	r17, 0x00	; 0
+ 3f6:	00 e0       	ldi	r16, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:488
+    {
+        digitalWrite(i, bitRead(digit2, 6-i));
+ 3f8:	c6 e0       	ldi	r28, 0x06	; 6
+ 3fa:	d0 e0       	ldi	r29, 0x00	; 0
+ 3fc:	60 91 83 00 	lds	r22, 0x0083	; 0x800083 <digit2>
+ 400:	70 e0       	ldi	r23, 0x00	; 0
+ 402:	ce 01       	movw	r24, r28
+ 404:	80 1b       	sub	r24, r16
+ 406:	91 0b       	sbc	r25, r17
+ 408:	02 c0       	rjmp	.+4      	; 0x40e <__LOCK_REGION_LENGTH__+0xe>
+ 40a:	75 95       	asr	r23
+ 40c:	67 95       	ror	r22
+ 40e:	8a 95       	dec	r24
+ 410:	e2 f7       	brpl	.-8      	; 0x40a <__LOCK_REGION_LENGTH__+0xa>
+ 412:	61 70       	andi	r22, 0x01	; 1
+ 414:	80 2f       	mov	r24, r16
+ 416:	91 df       	rcall	.-222    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:486
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT1_CATHODE, 0);
+
+    for (int i = 0; i < 7; i++)
+ 418:	0f 5f       	subi	r16, 0xFF	; 255
+ 41a:	1f 4f       	sbci	r17, 0xFF	; 255
+ 41c:	07 30       	cpi	r16, 0x07	; 7
+ 41e:	11 05       	cpc	r17, r1
+ 420:	69 f7       	brne	.-38     	; 0x3fc <updateLED()+0x56>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:491
+    {
+        digitalWrite(i, bitRead(digit2, 6-i));
+    }
+
+    digitalWrite(DIGIT2_CATHODE, 1);
+ 422:	61 e0       	ldi	r22, 0x01	; 1
+ 424:	89 e0       	ldi	r24, 0x09	; 9
+ 426:	89 df       	rcall	.-238    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:492
+    if (deviceMode == 1)
+ 428:	81 e0       	ldi	r24, 0x01	; 1
+ 42a:	f8 12       	cpse	r15, r24
+ 42c:	2d c0       	rjmp	.+90     	; 0x488 <__LOCK_REGION_LENGTH__+0x88>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:494
+    {
+        updateCount();
+ 42e:	9d de       	rcall	.-710    	; 0x16a <updateCount()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:500
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT2_CATHODE, 0);
+ 430:	60 e0       	ldi	r22, 0x00	; 0
+ 432:	89 e0       	ldi	r24, 0x09	; 9
+ 434:	82 df       	rcall	.-252    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:502
+
+    for (int i = 0; i < 7; i++)
+ 436:	d0 e0       	ldi	r29, 0x00	; 0
+ 438:	c0 e0       	ldi	r28, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:504
+    {
+        digitalWrite(i, bitRead(digit3, 6-i));
+ 43a:	06 e0       	ldi	r16, 0x06	; 6
+ 43c:	10 e0       	ldi	r17, 0x00	; 0
+ 43e:	60 91 84 00 	lds	r22, 0x0084	; 0x800084 <digit3>
+ 442:	70 e0       	ldi	r23, 0x00	; 0
+ 444:	c8 01       	movw	r24, r16
+ 446:	8c 1b       	sub	r24, r28
+ 448:	9d 0b       	sbc	r25, r29
+ 44a:	02 c0       	rjmp	.+4      	; 0x450 <__LOCK_REGION_LENGTH__+0x50>
+ 44c:	75 95       	asr	r23
+ 44e:	67 95       	ror	r22
+ 450:	8a 95       	dec	r24
+ 452:	e2 f7       	brpl	.-8      	; 0x44c <__LOCK_REGION_LENGTH__+0x4c>
+ 454:	61 70       	andi	r22, 0x01	; 1
+ 456:	8c 2f       	mov	r24, r28
+ 458:	70 df       	rcall	.-288    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:502
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT2_CATHODE, 0);
+
+    for (int i = 0; i < 7; i++)
+ 45a:	21 96       	adiw	r28, 0x01	; 1
+ 45c:	c7 30       	cpi	r28, 0x07	; 7
+ 45e:	d1 05       	cpc	r29, r1
+ 460:	71 f7       	brne	.-36     	; 0x43e <__LOCK_REGION_LENGTH__+0x3e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:507
+    {
+        digitalWrite(i, bitRead(digit3, 6-i));
+    }
+
+    digitalWrite(DIGIT3_CATHODE, 1);
+ 462:	61 e0       	ldi	r22, 0x01	; 1
+ 464:	8a e0       	ldi	r24, 0x0A	; 10
+ 466:	69 df       	rcall	.-302    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:508
+    if (deviceMode == 1)
+ 468:	81 e0       	ldi	r24, 0x01	; 1
+ 46a:	f8 12       	cpse	r15, r24
+ 46c:	11 c0       	rjmp	.+34     	; 0x490 <__LOCK_REGION_LENGTH__+0x90>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:510
+    {
+        updateCount();
+ 46e:	7d de       	rcall	.-774    	; 0x16a <updateCount()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:516
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT3_CATHODE, 0);
+ 470:	60 e0       	ldi	r22, 0x00	; 0
+ 472:	8a e0       	ldi	r24, 0x0A	; 10
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:517
+}
+ 474:	df 91       	pop	r29
+ 476:	cf 91       	pop	r28
+ 478:	1f 91       	pop	r17
+ 47a:	0f 91       	pop	r16
+ 47c:	ff 90       	pop	r15
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:516
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+    }
+    digitalWrite(DIGIT3_CATHODE, 0);
+ 47e:	5d cf       	rjmp	.-326    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:482
+    {
+        updateCount();
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+ 480:	84 ef       	ldi	r24, 0xF4	; 244
+ 482:	91 e0       	ldi	r25, 0x01	; 1
+ 484:	17 de       	rcall	.-978    	; 0xb4 <delayMicroseconds>
+ 486:	b3 cf       	rjmp	.-154    	; 0x3ee <updateLED()+0x48>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:498
+    {
+        updateCount();
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+ 488:	84 ef       	ldi	r24, 0xF4	; 244
+ 48a:	91 e0       	ldi	r25, 0x01	; 1
+ 48c:	13 de       	rcall	.-986    	; 0xb4 <delayMicroseconds>
+ 48e:	d0 cf       	rjmp	.-96     	; 0x430 <__LOCK_REGION_LENGTH__+0x30>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:514
+    {
+        updateCount();
+    }
+    else
+    {
+        delayMicroseconds(scanDelay);
+ 490:	84 ef       	ldi	r24, 0xF4	; 244
+ 492:	91 e0       	ldi	r25, 0x01	; 1
+ 494:	0f de       	rcall	.-994    	; 0xb4 <delayMicroseconds>
+ 496:	ec cf       	rjmp	.-40     	; 0x470 <__LOCK_REGION_LENGTH__+0x70>
+
+00000498 <selfTest()>:
+selfTest():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:659
+        }
+    }
+}
+
+void selfTest()
+{
+ 498:	cf 93       	push	r28
+ 49a:	df 93       	push	r29
+ 49c:	da e0       	ldi	r29, 0x0A	; 10
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:660
+  byte pass = 0;
+ 49e:	c0 e0       	ldi	r28, 0x00	; 0
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:664
+  
+  for (byte i = 0; i < 10; i++)
+  {
+    digitalWrite(IRLED, 1);
+ 4a0:	61 e0       	ldi	r22, 0x01	; 1
+ 4a2:	8b e0       	ldi	r24, 0x0B	; 11
+ 4a4:	4a df       	rcall	.-364    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:665
+    delay(20);
+ 4a6:	64 e1       	ldi	r22, 0x14	; 20
+ 4a8:	70 e0       	ldi	r23, 0x00	; 0
+ 4aa:	80 e0       	ldi	r24, 0x00	; 0
+ 4ac:	90 e0       	ldi	r25, 0x00	; 0
+ 4ae:	33 de       	rcall	.-922    	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:666
+    if ( analogRead(IRSENSOR_A) > 100 && analogRead(IRSENSOR_B) > 100 )
+ 4b0:	89 e8       	ldi	r24, 0x89	; 137
+ 4b2:	f6 dd       	rcall	.-1044   	; 0xa0 <analogRead>
+ 4b4:	85 36       	cpi	r24, 0x65	; 101
+ 4b6:	91 05       	cpc	r25, r1
+ 4b8:	34 f0       	brlt	.+12     	; 0x4c6 <selfTest()+0x2e>
+ 4ba:	86 e8       	ldi	r24, 0x86	; 134
+ 4bc:	f1 dd       	rcall	.-1054   	; 0xa0 <analogRead>
+ 4be:	85 36       	cpi	r24, 0x65	; 101
+ 4c0:	91 05       	cpc	r25, r1
+ 4c2:	0c f0       	brlt	.+2      	; 0x4c6 <selfTest()+0x2e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:668
+    {
+      pass++;
+ 4c4:	cf 5f       	subi	r28, 0xFF	; 255
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:670
+    }
+    digitalWrite(IRLED, 0);
+ 4c6:	60 e0       	ldi	r22, 0x00	; 0
+ 4c8:	8b e0       	ldi	r24, 0x0B	; 11
+ 4ca:	37 df       	rcall	.-402    	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:671
+    delay(20);
+ 4cc:	64 e1       	ldi	r22, 0x14	; 20
+ 4ce:	70 e0       	ldi	r23, 0x00	; 0
+ 4d0:	80 e0       	ldi	r24, 0x00	; 0
+ 4d2:	90 e0       	ldi	r25, 0x00	; 0
+ 4d4:	20 de       	rcall	.-960    	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:672
+    if ( analogRead(IRSENSOR_A) < 50 && analogRead(IRSENSOR_B) < 50 )
+ 4d6:	89 e8       	ldi	r24, 0x89	; 137
+ 4d8:	e3 dd       	rcall	.-1082   	; 0xa0 <analogRead>
+ 4da:	c2 97       	sbiw	r24, 0x32	; 50
+ 4dc:	2c f4       	brge	.+10     	; 0x4e8 <selfTest()+0x50>
+ 4de:	86 e8       	ldi	r24, 0x86	; 134
+ 4e0:	df dd       	rcall	.-1090   	; 0xa0 <analogRead>
+ 4e2:	c2 97       	sbiw	r24, 0x32	; 50
+ 4e4:	0c f4       	brge	.+2      	; 0x4e8 <selfTest()+0x50>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:674
+    {
+      pass++;
+ 4e6:	cf 5f       	subi	r28, 0xFF	; 255
+ 4e8:	d1 50       	subi	r29, 0x01	; 1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:662
+
+void selfTest()
+{
+  byte pass = 0;
+  
+  for (byte i = 0; i < 10; i++)
+ 4ea:	d1 f6       	brne	.-76     	; 0x4a0 <selfTest()+0x8>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:678
+    {
+      pass++;
+    }
+  }
+
+  if (pass < 15)
+ 4ec:	cf 30       	cpi	r28, 0x0F	; 15
+ 4ee:	d8 f4       	brcc	.+54     	; 0x526 <selfTest()+0x8e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:680
+  {
+    digit1 = 0b00101111; // b
+ 4f0:	8f e2       	ldi	r24, 0x2F	; 47
+ 4f2:	80 93 82 00 	sts	0x0082, r24	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:681
+    digit2 = 0b01111110; // A
+ 4f6:	8e e7       	ldi	r24, 0x7E	; 126
+ 4f8:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:682
+    digit3 = 0b00011010; // t
+ 4fc:	8a e1       	ldi	r24, 0x1A	; 26
+ 4fe:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <digit3>
+ 502:	c4 ef       	ldi	r28, 0xF4	; 244
+ 504:	d1 e0       	ldi	r29, 0x01	; 1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:683
+    for(int i = 0; i < 500; i++){updateLED();}
+ 506:	4f df       	rcall	.-354    	; 0x3a6 <updateLED()>
+ 508:	21 97       	sbiw	r28, 0x01	; 1
+ 50a:	e9 f7       	brne	.-6      	; 0x506 <selfTest()+0x6e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:684
+    digit1 = 0b01101101; // E
+ 50c:	8d e6       	ldi	r24, 0x6D	; 109
+ 50e:	80 93 82 00 	sts	0x0082, r24	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:685
+    digit2 = 0b00001100; // r
+ 512:	8c e0       	ldi	r24, 0x0C	; 12
+ 514:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:686
+    digit3 = 0b00001100; // r
+ 518:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <digit3>
+ 51c:	c4 ef       	ldi	r28, 0xF4	; 244
+ 51e:	d1 e0       	ldi	r29, 0x01	; 1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:687
+    for(int i = 0; i < 500; i++){updateLED();}
+ 520:	42 df       	rcall	.-380    	; 0x3a6 <updateLED()>
+ 522:	21 97       	sbiw	r28, 0x01	; 1
+ 524:	e9 f7       	brne	.-6      	; 0x520 <selfTest()+0x88>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:690
+  }
+
+  digitalWrite(IRLED, 0);
+ 526:	60 e0       	ldi	r22, 0x00	; 0
+ 528:	8b e0       	ldi	r24, 0x0B	; 11
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:693
+
+  return;
+}
+ 52a:	df 91       	pop	r29
+ 52c:	cf 91       	pop	r28
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:690
+    digit2 = 0b00001100; // r
+    digit3 = 0b00001100; // r
+    for(int i = 0; i < 500; i++){updateLED();}
+  }
+
+  digitalWrite(IRLED, 0);
+ 52e:	05 cf       	rjmp	.-502    	; 0x33a <digitalWrite>
+
+00000530 <pinMode>:
+pinMode():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 530:	cf 93       	push	r28
+ 532:	df 93       	push	r29
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 534:	87 ff       	sbrs	r24, 7
+ 536:	06 c0       	rjmp	.+12     	; 0x544 <pinMode+0x14>
+ 538:	8f 77       	andi	r24, 0x7F	; 127
+ 53a:	83 30       	cpi	r24, 0x03	; 3
+ 53c:	18 f0       	brcs	.+6      	; 0x544 <pinMode+0x14>
+ 53e:	87 30       	cpi	r24, 0x07	; 7
+ 540:	40 f5       	brcc	.+80     	; 0x592 <pinMode+0x62>
+ 542:	8f 5f       	subi	r24, 0xFF	; 255
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+ 544:	90 e0       	ldi	r25, 0x00	; 0
+ 546:	fc 01       	movw	r30, r24
+ 548:	e8 5a       	subi	r30, 0xA8	; 168
+ 54a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 54c:	24 91       	lpm	r18, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 54e:	88 5b       	subi	r24, 0xB8	; 184
+ 550:	9f 4f       	sbci	r25, 0xFF	; 255
+ 552:	fc 01       	movw	r30, r24
+ 554:	84 91       	lpm	r24, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 556:	88 23       	and	r24, r24
+ 558:	c9 f0       	breq	.+50     	; 0x58c <pinMode+0x5c>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 55a:	90 e0       	ldi	r25, 0x00	; 0
+ 55c:	88 0f       	add	r24, r24
+ 55e:	99 1f       	adc	r25, r25
+ 560:	fc 01       	movw	r30, r24
+ 562:	ea 5d       	subi	r30, 0xDA	; 218
+ 564:	ff 4f       	sbci	r31, 0xFF	; 255
+ 566:	a5 91       	lpm	r26, Z+
+ 568:	b4 91       	lpm	r27, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 56a:	fc 01       	movw	r30, r24
+ 56c:	e4 5d       	subi	r30, 0xD4	; 212
+ 56e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 570:	c5 91       	lpm	r28, Z+
+ 572:	d4 91       	lpm	r29, Z
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+ 574:	61 11       	cpse	r22, r1
+ 576:	13 c0       	rjmp	.+38     	; 0x59e <pinMode+0x6e>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+ 578:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 57a:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 57c:	8c 91       	ld	r24, X
+ 57e:	20 95       	com	r18
+ 580:	82 23       	and	r24, r18
+ 582:	8c 93       	st	X, r24
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 584:	88 81       	ld	r24, Y
+ 586:	28 23       	and	r18, r24
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:54
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+ 588:	28 83       	st	Y, r18
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:55
+    SREG = oldSREG;
+ 58a:	9f bf       	out	0x3f, r25	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 58c:	df 91       	pop	r29
+ 58e:	cf 91       	pop	r28
+ 590:	08 95       	ret
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:34
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 592:	8b 30       	cpi	r24, 0x0B	; 11
+ 594:	10 f4       	brcc	.+4      	; 0x59a <pinMode+0x6a>
+ 596:	8b 5f       	subi	r24, 0xFB	; 251
+ 598:	d5 cf       	rjmp	.-86     	; 0x544 <pinMode+0x14>
+ 59a:	80 e0       	ldi	r24, 0x00	; 0
+ 59c:	d3 cf       	rjmp	.-90     	; 0x544 <pinMode+0x14>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:50
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 59e:	62 30       	cpi	r22, 0x02	; 2
+ 5a0:	51 f4       	brne	.+20     	; 0x5b6 <pinMode+0x86>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:51
+    uint8_t oldSREG = SREG;
+ 5a2:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:52
+                cli();
+ 5a4:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:53
+    *reg &= ~bit;
+ 5a6:	3c 91       	ld	r19, X
+ 5a8:	82 2f       	mov	r24, r18
+ 5aa:	80 95       	com	r24
+ 5ac:	83 23       	and	r24, r19
+ 5ae:	8c 93       	st	X, r24
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:54
+    *out |= bit;
+ 5b0:	e8 81       	ld	r30, Y
+ 5b2:	2e 2b       	or	r18, r30
+ 5b4:	e9 cf       	rjmp	.-46     	; 0x588 <pinMode+0x58>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:57
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 5b6:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:58
+                cli();
+ 5b8:	f8 94       	cli
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 5ba:	ec 91       	ld	r30, X
+ 5bc:	2e 2b       	or	r18, r30
+ 5be:	2c 93       	st	X, r18
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 5c0:	8f bf       	out	0x3f, r24	; 63
+ 5c2:	e4 cf       	rjmp	.-56     	; 0x58c <pinMode+0x5c>
+
+000005c4 <__vector_6>:
+__vector_6():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:308
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+ 5c4:	1f 92       	push	r1
+ 5c6:	0f 92       	push	r0
+ 5c8:	0f b6       	in	r0, 0x3f	; 63
+ 5ca:	0f 92       	push	r0
+ 5cc:	11 24       	eor	r1, r1
+ 5ce:	2f 93       	push	r18
+ 5d0:	3f 93       	push	r19
+ 5d2:	8f 93       	push	r24
+ 5d4:	9f 93       	push	r25
+ 5d6:	af 93       	push	r26
+ 5d8:	bf 93       	push	r27
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:311
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+ 5da:	80 91 74 00 	lds	r24, 0x0074	; 0x800074 <millis_timer_millis>
+ 5de:	90 91 75 00 	lds	r25, 0x0075	; 0x800075 <millis_timer_millis+0x1>
+ 5e2:	a0 91 76 00 	lds	r26, 0x0076	; 0x800076 <millis_timer_millis+0x2>
+ 5e6:	b0 91 77 00 	lds	r27, 0x0077	; 0x800077 <millis_timer_millis+0x3>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:312
+    unsigned char f = millis_timer_fract;
+ 5ea:	30 91 73 00 	lds	r19, 0x0073	; 0x800073 <millis_timer_fract>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:319
+    static unsigned char correct_exact = 0;     // rollover intended
+    if (++correct_exact < CORRECT_EXACT_MANY) {
+      ++f;
+    }
+#endif
+    f += FRACT_INC;
+ 5ee:	23 e0       	ldi	r18, 0x03	; 3
+ 5f0:	23 0f       	add	r18, r19
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:321
+
+    if (f >= FRACT_MAX)
+ 5f2:	2d 37       	cpi	r18, 0x7D	; 125
+ 5f4:	68 f1       	brcs	.+90     	; 0x650 <__vector_6+0x8c>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:323
+    {
+      f -= FRACT_MAX;
+ 5f6:	26 e8       	ldi	r18, 0x86	; 134
+ 5f8:	23 0f       	add	r18, r19
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:324
+      m += MILLIS_INC + 1;
+ 5fa:	02 96       	adiw	r24, 0x02	; 2
+ 5fc:	a1 1d       	adc	r26, r1
+ 5fe:	b1 1d       	adc	r27, r1
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:331
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+ 600:	20 93 73 00 	sts	0x0073, r18	; 0x800073 <millis_timer_fract>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:332
+    millis_timer_millis = m;
+ 604:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <millis_timer_millis>
+ 608:	90 93 75 00 	sts	0x0075, r25	; 0x800075 <millis_timer_millis+0x1>
+ 60c:	a0 93 76 00 	sts	0x0076, r26	; 0x800076 <millis_timer_millis+0x2>
+ 610:	b0 93 77 00 	sts	0x0077, r27	; 0x800077 <millis_timer_millis+0x3>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:334
+#ifndef CORRECT_EXACT_MICROS
+    millis_timer_overflow_count++;
+ 614:	80 91 78 00 	lds	r24, 0x0078	; 0x800078 <millis_timer_overflow_count>
+ 618:	90 91 79 00 	lds	r25, 0x0079	; 0x800079 <millis_timer_overflow_count+0x1>
+ 61c:	a0 91 7a 00 	lds	r26, 0x007A	; 0x80007a <millis_timer_overflow_count+0x2>
+ 620:	b0 91 7b 00 	lds	r27, 0x007B	; 0x80007b <millis_timer_overflow_count+0x3>
+ 624:	01 96       	adiw	r24, 0x01	; 1
+ 626:	a1 1d       	adc	r26, r1
+ 628:	b1 1d       	adc	r27, r1
+ 62a:	80 93 78 00 	sts	0x0078, r24	; 0x800078 <millis_timer_overflow_count>
+ 62e:	90 93 79 00 	sts	0x0079, r25	; 0x800079 <millis_timer_overflow_count+0x1>
+ 632:	a0 93 7a 00 	sts	0x007A, r26	; 0x80007a <millis_timer_overflow_count+0x2>
+ 636:	b0 93 7b 00 	sts	0x007B, r27	; 0x80007b <millis_timer_overflow_count+0x3>
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:336
+#endif
+  }
+ 63a:	bf 91       	pop	r27
+ 63c:	af 91       	pop	r26
+ 63e:	9f 91       	pop	r25
+ 640:	8f 91       	pop	r24
+ 642:	3f 91       	pop	r19
+ 644:	2f 91       	pop	r18
+ 646:	0f 90       	pop	r0
+ 648:	0f be       	out	0x3f, r0	; 63
+ 64a:	0f 90       	pop	r0
+ 64c:	1f 90       	pop	r1
+ 64e:	18 95       	reti
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:328
+      f -= FRACT_MAX;
+      m += MILLIS_INC + 1;
+    }
+    else
+    {
+      m += MILLIS_INC;
+ 650:	01 96       	adiw	r24, 0x01	; 1
+ 652:	a1 1d       	adc	r26, r1
+ 654:	b1 1d       	adc	r27, r1
+ 656:	d4 cf       	rjmp	.-88     	; 0x600 <__vector_6+0x3c>
+
+00000658 <main>:
+main():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/main.cpp:4
+#include <Arduino.h>
+
+int main(void)
+{
+ 658:	cf 93       	push	r28
+ 65a:	df 93       	push	r29
+ 65c:	00 d0       	rcall	.+0      	; 0x65e <main+0x6>
+ 65e:	cd b7       	in	r28, 0x3d	; 61
+ 660:	de b7       	in	r29, 0x3e	; 62
+init():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1141
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+ 662:	93 e0       	ldi	r25, 0x03	; 3
+ 664:	93 bf       	out	0x33, r25	; 51
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1162
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 666:	78 94       	sei
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1167
+
+  #ifndef DISABLEMILLIS
+    // Enable the overflow interrupt (this is the basic system tic-toc for millis)
+    #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK, TOIE0);
+ 668:	89 b7       	in	r24, 0x39	; 57
+ 66a:	82 60       	ori	r24, 0x02	; 2
+ 66c:	89 bf       	out	0x39, r24	; 57
+initToneTimerInternal():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:963
+      GTCCR = (1<<PWM1B);
+      OCR1C = 0xFF; //Use 255 as the top to match with the others as this module doesn't have a 8bit PWM mode.
+      TCCR1 = (1<<CTC1) | (1<<PWM1A) | (ToneTimer_Prescale_Index << CS10);
+    #elif (TIMER_TO_USE_FOR_TONE == 1) && defined(TCCR1E) // ATtiny x61
+      // Use the Tone Timer for phase correct PWM
+      TCCR1A = (1<<PWM1A) | (1<<PWM1B);
+ 66e:	90 bf       	out	0x30, r25	; 48
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:964
+      TCCR1C = (1<<PWM1D);
+ 670:	81 e0       	ldi	r24, 0x01	; 1
+ 672:	87 bd       	out	0x27, r24	; 39
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:965
+      TCCR1D = (1<<WGM10) | (0<<WGM11);
+ 674:	86 bd       	out	0x26, r24	; 38
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:966
+      TCCR1B = (ToneTimer_Prescale_Index << CS10);
+ 676:	87 e0       	ldi	r24, 0x07	; 7
+ 678:	8f bd       	out	0x2f, r24	; 47
+init():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1214
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+    #if defined(ADCSRA)
+      // set a2d prescale factor
+      // ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+      // dude, this is being called on startup. We know that ADCSRA is 0! Why add a RMW cycle?!
+      ADCSRA = (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+ 67a:	87 e8       	ldi	r24, 0x87	; 135
+ 67c:	86 b9       	out	0x06, r24	; 6
+ 67e:	10 e0       	ldi	r17, 0x00	; 0
+setup():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:147
+void setup()
+{
+
+    for (int i = 0; i < 12; i++)
+    {
+        pinMode(i, OUTPUT);
+ 680:	61 e0       	ldi	r22, 0x01	; 1
+ 682:	81 2f       	mov	r24, r17
+ 684:	55 df       	rcall	.-342    	; 0x530 <pinMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:148
+        digitalWrite(i, 0);
+ 686:	60 e0       	ldi	r22, 0x00	; 0
+ 688:	81 2f       	mov	r24, r17
+ 68a:	57 de       	rcall	.-850    	; 0x33a <digitalWrite>
+ 68c:	1f 5f       	subi	r17, 0xFF	; 255
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:145
+// pinModes and initial pin states. We also check
+// the EEPROM for saved user settings
+void setup()
+{
+
+    for (int i = 0; i < 12; i++)
+ 68e:	1c 30       	cpi	r17, 0x0C	; 12
+ 690:	b9 f7       	brne	.-18     	; 0x680 <main+0x28>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:153
+        digitalWrite(i, 0);
+    }
+
+    for (int i = 12; i < 14; i++)
+    {
+        pinMode(i, INPUT_PULLUP);
+ 692:	62 e0       	ldi	r22, 0x02	; 2
+ 694:	8c e0       	ldi	r24, 0x0C	; 12
+ 696:	4c df       	rcall	.-360    	; 0x530 <pinMode>
+ 698:	62 e0       	ldi	r22, 0x02	; 2
+ 69a:	8d e0       	ldi	r24, 0x0D	; 13
+ 69c:	49 df       	rcall	.-366    	; 0x530 <pinMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:156
+    }
+
+    pinMode(IRSENSOR_A, INPUT);
+ 69e:	60 e0       	ldi	r22, 0x00	; 0
+ 6a0:	89 e8       	ldi	r24, 0x89	; 137
+ 6a2:	46 df       	rcall	.-372    	; 0x530 <pinMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:157
+    pinMode(IRSENSOR_B, INPUT);
+ 6a4:	60 e0       	ldi	r22, 0x00	; 0
+ 6a6:	86 e8       	ldi	r24, 0x86	; 134
+ 6a8:	43 df       	rcall	.-378    	; 0x530 <pinMode>
+loadSettings():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:198
+
+// Check EEPROM for user settings and load them
+void loadSettings()
+{
+    byte nvmPitch, nvmMode;
+    EEPROM.get(EEPROM_ADDR_PITCH, nvmPitch);
+ 6aa:	be 01       	movw	r22, r28
+ 6ac:	6e 5f       	subi	r22, 0xFE	; 254
+ 6ae:	7f 4f       	sbci	r23, 0xFF	; 255
+ 6b0:	90 e0       	ldi	r25, 0x00	; 0
+ 6b2:	80 e0       	ldi	r24, 0x00	; 0
+ 6b4:	1d de       	rcall	.-966    	; 0x2f0 <unsigned char& EEPROMClass::get<unsigned char>(int, unsigned char&) [clone .isra.3]>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:199
+    EEPROM.get(EEPROM_ADDR_MODE, nvmMode);
+ 6b6:	be 01       	movw	r22, r28
+ 6b8:	6f 5f       	subi	r22, 0xFF	; 255
+ 6ba:	7f 4f       	sbci	r23, 0xFF	; 255
+ 6bc:	81 e0       	ldi	r24, 0x01	; 1
+ 6be:	90 e0       	ldi	r25, 0x00	; 0
+ 6c0:	17 de       	rcall	.-978    	; 0x2f0 <unsigned char& EEPROMClass::get<unsigned char>(int, unsigned char&) [clone .isra.3]>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:205
+
+    // We're hypervigilant about writing a valid value to pitch,
+    // This way even if EEPROM gets corrupted by low battery,
+    // At least the pitch ends up in a known and user-correctable
+    // state
+    if (nvmPitch == 1 || nvmPitch == 2 || nvmPitch == 4 || nvmPitch == 8 || nvmPitch == 12 || nvmPitch == 16)
+ 6c2:	6a 81       	ldd	r22, Y+2	; 0x02
+ 6c4:	8f ef       	ldi	r24, 0xFF	; 255
+ 6c6:	86 0f       	add	r24, r22
+ 6c8:	82 30       	cpi	r24, 0x02	; 2
+ 6ca:	b0 f4       	brcc	.+44     	; 0x6f8 <main+0xa0>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:207
+    {
+        pitch = nvmPitch;
+ 6cc:	60 93 67 00 	sts	0x0067, r22	; 0x800067 <pitch>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:208
+        ratio = 4.0 / int(pitch);
+ 6d0:	70 e0       	ldi	r23, 0x00	; 0
+ 6d2:	90 e0       	ldi	r25, 0x00	; 0
+ 6d4:	80 e0       	ldi	r24, 0x00	; 0
+ 6d6:	6c d2       	rcall	.+1240   	; 0xbb0 <__floatsisf>
+ 6d8:	9b 01       	movw	r18, r22
+ 6da:	ac 01       	movw	r20, r24
+ 6dc:	60 e0       	ldi	r22, 0x00	; 0
+ 6de:	70 e0       	ldi	r23, 0x00	; 0
+ 6e0:	80 e8       	ldi	r24, 0x80	; 128
+ 6e2:	90 e4       	ldi	r25, 0x40	; 64
+ 6e4:	ca d1       	rcall	.+916    	; 0xa7a <__divsf3>
+ 6e6:	60 93 63 00 	sts	0x0063, r22	; 0x800063 <ratio>
+ 6ea:	70 93 64 00 	sts	0x0064, r23	; 0x800064 <ratio+0x1>
+ 6ee:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <ratio+0x2>
+ 6f2:	90 93 66 00 	sts	0x0066, r25	; 0x800066 <ratio+0x3>
+ 6f6:	08 c0       	rjmp	.+16     	; 0x708 <main+0xb0>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:205
+
+    // We're hypervigilant about writing a valid value to pitch,
+    // This way even if EEPROM gets corrupted by low battery,
+    // At least the pitch ends up in a known and user-correctable
+    // state
+    if (nvmPitch == 1 || nvmPitch == 2 || nvmPitch == 4 || nvmPitch == 8 || nvmPitch == 12 || nvmPitch == 16)
+ 6f8:	86 2f       	mov	r24, r22
+ 6fa:	87 7f       	andi	r24, 0xF7	; 247
+ 6fc:	84 30       	cpi	r24, 0x04	; 4
+ 6fe:	31 f3       	breq	.-52     	; 0x6cc <main+0x74>
+ 700:	68 30       	cpi	r22, 0x08	; 8
+ 702:	21 f3       	breq	.-56     	; 0x6cc <main+0x74>
+ 704:	60 31       	cpi	r22, 0x10	; 16
+ 706:	11 f3       	breq	.-60     	; 0x6cc <main+0x74>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:211
+    {
+        pitch = nvmPitch;
+        ratio = 4.0 / int(pitch);
+    }
+
+    if (nvmMode == 0x00)
+ 708:	89 81       	ldd	r24, Y+1	; 0x01
+ 70a:	81 11       	cpse	r24, r1
+ 70c:	29 c0       	rjmp	.+82     	; 0x760 <main+0x108>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:213
+    {
+        countingMode = 0;
+ 70e:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <countingMode>
+setup():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:159
+    }
+
+    pinMode(IRSENSOR_A, INPUT);
+    pinMode(IRSENSOR_B, INPUT);
+    loadSettings();
+    delay(50);
+ 712:	62 e3       	ldi	r22, 0x32	; 50
+ 714:	70 e0       	ldi	r23, 0x00	; 0
+ 716:	80 e0       	ldi	r24, 0x00	; 0
+ 718:	90 e0       	ldi	r25, 0x00	; 0
+ 71a:	fd dc       	rcall	.-1542   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:160
+    selfTest();
+ 71c:	bd de       	rcall	.-646    	; 0x498 <selfTest()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:161
+    delay(50);
+ 71e:	62 e3       	ldi	r22, 0x32	; 50
+ 720:	70 e0       	ldi	r23, 0x00	; 0
+ 722:	80 e0       	ldi	r24, 0x00	; 0
+ 724:	90 e0       	ldi	r25, 0x00	; 0
+ 726:	f7 dc       	rcall	.-1554   	; 0x116 <delay>
+mode1():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:303
+        }
+
+        if (digitalRead(SETBTN) == 0)
+        {
+            delay(500);
+            deviceMode = 3;
+ 728:	53 e0       	ldi	r21, 0x03	; 3
+ 72a:	f5 2e       	mov	r15, r21
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:280
+void mode1()
+{
+
+    if (digitalRead(STARTBTN) == 0)
+    {
+        deviceMode = 2;
+ 72c:	02 e0       	ldi	r16, 0x02	; 2
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:415
+                if(countingMode == 0){
+                    digit1 = 0b00100100; // I
+                    digit2 = 0b00001110; // n
+                    digit3 = 0b00000111; // v
+                }else{
+                    digit1 = 0b00011111; // d
+ 72e:	6f e1       	ldi	r22, 0x1F	; 31
+ 730:	d6 2e       	mov	r13, r22
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:416
+                    digit2 = 0b00100100; // I
+ 732:	74 e2       	ldi	r23, 0x24	; 36
+ 734:	e7 2e       	mov	r14, r23
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:417
+                    digit3 = 0b01101011; // S
+ 736:	eb e6       	ldi	r30, 0x6B	; 107
+ 738:	ce 2e       	mov	r12, r30
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:412
+                    delay(200);
+                    mode3state = 2;
+                }
+                if(countingMode == 0){
+                    digit1 = 0b00100100; // I
+                    digit2 = 0b00001110; // n
+ 73a:	fe e0       	ldi	r31, 0x0E	; 14
+ 73c:	bf 2e       	mov	r11, r31
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:413
+                    digit3 = 0b00000111; // v
+ 73e:	a7 e0       	ldi	r26, 0x07	; 7
+ 740:	aa 2e       	mov	r10, r26
+loop():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:169
+
+// The main loop just manages the state machine
+void loop()
+{
+
+    switch (deviceMode)
+ 742:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <deviceMode>
+ 746:	81 30       	cpi	r24, 0x01	; 1
+ 748:	09 f4       	brne	.+2      	; 0x74c <main+0xf4>
+ 74a:	48 c0       	rjmp	.+144    	; 0x7dc <main+0x184>
+ 74c:	70 f0       	brcs	.+28     	; 0x76a <main+0x112>
+ 74e:	82 30       	cpi	r24, 0x02	; 2
+ 750:	09 f4       	brne	.+2      	; 0x754 <main+0xfc>
+ 752:	7a c0       	rjmp	.+244    	; 0x848 <main+0x1f0>
+ 754:	83 30       	cpi	r24, 0x03	; 3
+ 756:	09 f4       	brne	.+2      	; 0x75a <main+0x102>
+ 758:	9b c0       	rjmp	.+310    	; 0x890 <main+0x238>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:184
+        break;
+    case 3:
+        mode3();
+        break;
+    default:
+        deviceMode = 0;
+ 75a:	10 92 8f 00 	sts	0x008F, r1	; 0x80008f <deviceMode>
+ 75e:	f1 cf       	rjmp	.-30     	; 0x742 <main+0xea>
+loadSettings():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:215
+
+    if (nvmMode == 0x00)
+    {
+        countingMode = 0;
+    }
+    else if (nvmMode == 0x01)
+ 760:	81 30       	cpi	r24, 0x01	; 1
+ 762:	b9 f6       	brne	.-82     	; 0x712 <main+0xba>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:217
+    {
+        countingMode = 1;
+ 764:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <countingMode>
+ 768:	d4 cf       	rjmp	.-88     	; 0x712 <main+0xba>
+mode0():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:229
+// count and ignores the IR interruptors. To save battery, it also shuts off
+// the IR illuminators.
+void mode0()
+{
+
+    if (digitalRead(STARTBTN) == 0)
+ 76a:	8c e0       	ldi	r24, 0x0C	; 12
+ 76c:	ca dd       	rcall	.-1132   	; 0x302 <digitalRead>
+ 76e:	89 2b       	or	r24, r25
+ 770:	31 f4       	brne	.+12     	; 0x77e <main+0x126>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:231
+    {
+        deviceMode = 2;
+ 772:	00 93 8f 00 	sts	0x008F, r16	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:232
+        returnMode = 1;
+ 776:	81 e0       	ldi	r24, 0x01	; 1
+ 778:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <returnMode>
+ 77c:	e2 cf       	rjmp	.-60     	; 0x742 <main+0xea>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:236
+        return;
+    }
+
+    digitalWrite(IRLED, 0);
+ 77e:	60 e0       	ldi	r22, 0x00	; 0
+ 780:	8b e0       	ldi	r24, 0x0B	; 11
+ 782:	db dd       	rcall	.-1098   	; 0x33a <digitalWrite>
+main():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:238
+
+    byte blinkTimer = 0;
+ 784:	10 e0       	ldi	r17, 0x00	; 0
+mode0():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:250
+        updateLED();
+
+        if (digitalRead(STARTBTN) == 0)
+        {
+            delay(500);
+            deviceMode = 1;
+ 786:	99 24       	eor	r9, r9
+ 788:	93 94       	inc	r9
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:240
+
+    digitalWrite(IRLED, 0);
+
+    byte blinkTimer = 0;
+
+    while (deviceMode == 0)
+ 78a:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <deviceMode>
+ 78e:	81 11       	cpse	r24, r1
+ 790:	d8 cf       	rjmp	.-80     	; 0x742 <main+0xea>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:243
+    {
+
+        blinkTimer++;
+ 792:	1f 5f       	subi	r17, 0xFF	; 255
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:245
+
+        updateLED();
+ 794:	08 de       	rcall	.-1008   	; 0x3a6 <updateLED()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:247
+
+        if (digitalRead(STARTBTN) == 0)
+ 796:	8c e0       	ldi	r24, 0x0C	; 12
+ 798:	b4 dd       	rcall	.-1176   	; 0x302 <digitalRead>
+ 79a:	89 2b       	or	r24, r25
+ 79c:	39 f4       	brne	.+14     	; 0x7ac <main+0x154>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:249
+        {
+            delay(500);
+ 79e:	64 ef       	ldi	r22, 0xF4	; 244
+ 7a0:	71 e0       	ldi	r23, 0x01	; 1
+ 7a2:	80 e0       	ldi	r24, 0x00	; 0
+ 7a4:	90 e0       	ldi	r25, 0x00	; 0
+ 7a6:	b7 dc       	rcall	.-1682   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:250
+            deviceMode = 1;
+ 7a8:	90 92 8f 00 	sts	0x008F, r9	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:253
+        }
+
+        if (digitalRead(SETBTN) == 0)
+ 7ac:	8d e0       	ldi	r24, 0x0D	; 13
+ 7ae:	a9 dd       	rcall	.-1198   	; 0x302 <digitalRead>
+ 7b0:	89 2b       	or	r24, r25
+ 7b2:	49 f4       	brne	.+18     	; 0x7c6 <main+0x16e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:255
+        {
+            delay(500);
+ 7b4:	64 ef       	ldi	r22, 0xF4	; 244
+ 7b6:	71 e0       	ldi	r23, 0x01	; 1
+ 7b8:	80 e0       	ldi	r24, 0x00	; 0
+ 7ba:	90 e0       	ldi	r25, 0x00	; 0
+ 7bc:	ac dc       	rcall	.-1704   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:256
+            deviceMode = 3;
+ 7be:	f0 92 8f 00 	sts	0x008F, r15	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:257
+            returnMode = 0;
+ 7c2:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <returnMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:260
+        }
+
+        if(blinkTimer > 125)
+ 7c6:	1e 37       	cpi	r17, 0x7E	; 126
+ 7c8:	30 f0       	brcs	.+12     	; 0x7d6 <main+0x17e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:262
+        {
+            translateSegments(displayBuf);
+ 7ca:	80 91 7d 00 	lds	r24, 0x007D	; 0x80007d <displayBuf>
+ 7ce:	90 91 7e 00 	lds	r25, 0x007E	; 0x80007e <displayBuf+0x1>
+ 7d2:	72 dd       	rcall	.-1308   	; 0x2b8 <translateSegments(int)>
+ 7d4:	da cf       	rjmp	.-76     	; 0x78a <main+0x132>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:266
+        }
+        else
+        {
+            digit1 = 0;
+ 7d6:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <digit1>
+ 7da:	d7 cf       	rjmp	.-82     	; 0x78a <main+0x132>
+mode1():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:278
+// and updating the display. The actual counting (polling the IR interruptors)
+// happens inside of updateLED() for timing reasons.
+void mode1()
+{
+
+    if (digitalRead(STARTBTN) == 0)
+ 7dc:	8c e0       	ldi	r24, 0x0C	; 12
+ 7de:	91 dd       	rcall	.-1246   	; 0x302 <digitalRead>
+ 7e0:	89 2b       	or	r24, r25
+ 7e2:	29 f4       	brne	.+10     	; 0x7ee <main+0x196>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:280
+    {
+        deviceMode = 2;
+ 7e4:	00 93 8f 00 	sts	0x008F, r16	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:281
+        returnMode = 0;
+ 7e8:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <returnMode>
+ 7ec:	aa cf       	rjmp	.-172    	; 0x742 <main+0xea>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:285
+        return;
+    }
+
+    digitalWrite(IRLED, 1);
+ 7ee:	61 e0       	ldi	r22, 0x01	; 1
+ 7f0:	8b e0       	ldi	r24, 0x0B	; 11
+ 7f2:	a3 dd       	rcall	.-1210   	; 0x33a <digitalWrite>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:287
+
+    delay(50);
+ 7f4:	62 e3       	ldi	r22, 0x32	; 50
+ 7f6:	70 e0       	ldi	r23, 0x00	; 0
+ 7f8:	80 e0       	ldi	r24, 0x00	; 0
+ 7fa:	90 e0       	ldi	r25, 0x00	; 0
+ 7fc:	8c dc       	rcall	.-1768   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:304
+
+        if (digitalRead(SETBTN) == 0)
+        {
+            delay(500);
+            deviceMode = 3;
+            returnMode = 1;
+ 7fe:	11 e0       	ldi	r17, 0x01	; 1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:289
+
+    digitalWrite(IRLED, 1);
+
+    delay(50);
+
+    while (deviceMode == 1)
+ 800:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <deviceMode>
+ 804:	81 30       	cpi	r24, 0x01	; 1
+ 806:	09 f0       	breq	.+2      	; 0x80a <main+0x1b2>
+ 808:	9c cf       	rjmp	.-200    	; 0x742 <main+0xea>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:292
+    {
+
+        updateLED();
+ 80a:	cd dd       	rcall	.-1126   	; 0x3a6 <updateLED()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:294
+
+        if (digitalRead(STARTBTN) == 0)
+ 80c:	8c e0       	ldi	r24, 0x0C	; 12
+ 80e:	79 dd       	rcall	.-1294   	; 0x302 <digitalRead>
+ 810:	89 2b       	or	r24, r25
+ 812:	39 f4       	brne	.+14     	; 0x822 <main+0x1ca>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:296
+        {
+            delay(500);
+ 814:	64 ef       	ldi	r22, 0xF4	; 244
+ 816:	71 e0       	ldi	r23, 0x01	; 1
+ 818:	80 e0       	ldi	r24, 0x00	; 0
+ 81a:	90 e0       	ldi	r25, 0x00	; 0
+ 81c:	7c dc       	rcall	.-1800   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:297
+            deviceMode = 0;
+ 81e:	10 92 8f 00 	sts	0x008F, r1	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:300
+        }
+
+        if (digitalRead(SETBTN) == 0)
+ 822:	8d e0       	ldi	r24, 0x0D	; 13
+ 824:	6e dd       	rcall	.-1316   	; 0x302 <digitalRead>
+ 826:	89 2b       	or	r24, r25
+ 828:	49 f4       	brne	.+18     	; 0x83c <main+0x1e4>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:302
+        {
+            delay(500);
+ 82a:	64 ef       	ldi	r22, 0xF4	; 244
+ 82c:	71 e0       	ldi	r23, 0x01	; 1
+ 82e:	80 e0       	ldi	r24, 0x00	; 0
+ 830:	90 e0       	ldi	r25, 0x00	; 0
+ 832:	71 dc       	rcall	.-1822   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:303
+            deviceMode = 3;
+ 834:	f0 92 8f 00 	sts	0x008F, r15	; 0x80008f <deviceMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:304
+            returnMode = 1;
+ 838:	10 93 7c 00 	sts	0x007C, r17	; 0x80007c <returnMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:307
+        }
+
+        translateSegments(displayBuf);
+ 83c:	80 91 7d 00 	lds	r24, 0x007D	; 0x80007d <displayBuf>
+ 840:	90 91 7e 00 	lds	r25, 0x007E	; 0x80007e <displayBuf+0x1>
+ 844:	39 dd       	rcall	.-1422   	; 0x2b8 <translateSegments(int)>
+ 846:	dc cf       	rjmp	.-72     	; 0x800 <main+0x1a8>
+mode2():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:317
+// In this mode, we wait to see if the user really means it
+// (if they're holding the button down) and then we reset the
+// counter
+void mode2()
+{
+    while (deviceMode == 2)
+ 848:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <deviceMode>
+ 84c:	82 30       	cpi	r24, 0x02	; 2
+ 84e:	09 f0       	breq	.+2      	; 0x852 <main+0x1fa>
+ 850:	78 cf       	rjmp	.-272    	; 0x742 <main+0xea>
+ 852:	44 e6       	ldi	r20, 0x64	; 100
+ 854:	84 2e       	mov	r8, r20
+ 856:	91 2c       	mov	r9, r1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:321
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            updateLED();
+ 858:	a6 dd       	rcall	.-1204   	; 0x3a6 <updateLED()>
+ 85a:	81 e0       	ldi	r24, 0x01	; 1
+ 85c:	88 1a       	sub	r8, r24
+ 85e:	91 08       	sbc	r9, r1
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:319
+// counter
+void mode2()
+{
+    while (deviceMode == 2)
+    {
+        for (int i = 0; i < 100; i++)
+ 860:	d9 f7       	brne	.-10     	; 0x858 <main+0x200>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:323
+        {
+            updateLED();
+        }
+        delay(300);
+ 862:	6c e2       	ldi	r22, 0x2C	; 44
+ 864:	71 e0       	ldi	r23, 0x01	; 1
+ 866:	80 e0       	ldi	r24, 0x00	; 0
+ 868:	90 e0       	ldi	r25, 0x00	; 0
+ 86a:	55 dc       	rcall	.-1878   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:324
+        if (digitalRead(STARTBTN) == 1)
+ 86c:	8c e0       	ldi	r24, 0x0C	; 12
+ 86e:	49 dd       	rcall	.-1390   	; 0x302 <digitalRead>
+ 870:	01 97       	sbiw	r24, 0x01	; 1
+ 872:	51 f7       	brne	.-44     	; 0x848 <main+0x1f0>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:326
+        {
+            selfTest();
+ 874:	11 de       	rcall	.-990    	; 0x498 <selfTest()>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:327
+            count = 0;
+ 876:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <count+0x1>
+ 87a:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <count>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:328
+            displayBuf = 0;
+ 87e:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <displayBuf+0x1>
+ 882:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <displayBuf>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:329
+            deviceMode = returnMode;
+ 886:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <returnMode>
+ 88a:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <deviceMode>
+ 88e:	dc cf       	rjmp	.-72     	; 0x848 <main+0x1f0>
+main():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:341
+// adjusted using the COUNT/RESET button. In order to exit the mode 3, the
+// user must cycle through the entire settings menu. Probably OK because the
+// user likely won't adjust the settings often.
+void mode3()
+{
+    byte mode3state = 0;
+ 890:	10 e0       	ldi	r17, 0x00	; 0
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:383
+                    mode3state = 1;
+                }
+                numPositions(pitch);
+                digit3 = segLUT[numPos[0]];
+                digit2 = segLUT[numPos[1]];
+                digit1 = 0b01111100; // "P" for Pitch
+ 892:	8c e7       	ldi	r24, 0x7C	; 124
+ 894:	98 2e       	mov	r9, r24
+main():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:378
+                    ratio = 4.0 / int(pitch);
+                }
+                if (digitalRead(SETBTN) == 0)
+                {
+                    delay(200);
+                    mode3state = 1;
+ 896:	88 24       	eor	r8, r8
+ 898:	83 94       	inc	r8
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:361
+                        break;
+                    case 2:
+                        pitch = 4;
+                        break;
+                    case 4:
+                        pitch = 8;
+ 89a:	98 e0       	ldi	r25, 0x08	; 8
+ 89c:	79 2e       	mov	r7, r25
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:367
+                        break;
+                    case 8:
+                        pitch = 12;
+                        break;
+                    case 12:
+                        pitch = 16;
+ 89e:	20 e1       	ldi	r18, 0x10	; 16
+ 8a0:	62 2e       	mov	r6, r18
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:358
+                    {
+                    case 1:
+                        pitch = 2;
+                        break;
+                    case 2:
+                        pitch = 4;
+ 8a2:	34 e0       	ldi	r19, 0x04	; 4
+ 8a4:	53 2e       	mov	r5, r19
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:343
+// user likely won't adjust the settings often.
+void mode3()
+{
+    byte mode3state = 0;
+
+    while (deviceMode == 3)
+ 8a6:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <deviceMode>
+ 8aa:	83 30       	cpi	r24, 0x03	; 3
+ 8ac:	09 f0       	breq	.+2      	; 0x8b0 <main+0x258>
+ 8ae:	49 cf       	rjmp	.-366    	; 0x742 <main+0xea>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:346
+    {
+
+        switch(mode3state)
+ 8b0:	11 30       	cpi	r17, 0x01	; 1
+ 8b2:	09 f4       	brne	.+2      	; 0x8b6 <main+0x25e>
+ 8b4:	69 c0       	rjmp	.+210    	; 0x988 <main+0x330>
+ 8b6:	12 30       	cpi	r17, 0x02	; 2
+ 8b8:	09 f4       	brne	.+2      	; 0x8bc <main+0x264>
+ 8ba:	9c c0       	rjmp	.+312    	; 0x9f4 <main+0x39c>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:349
+        {
+            case 0:
+                if (digitalRead(STARTBTN) == 0)
+ 8bc:	8c e0       	ldi	r24, 0x0C	; 12
+ 8be:	21 dd       	rcall	.-1470   	; 0x302 <digitalRead>
+ 8c0:	89 2b       	or	r24, r25
+ 8c2:	31 f5       	brne	.+76     	; 0x910 <main+0x2b8>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:351
+                {
+                    delay(200);
+ 8c4:	68 ec       	ldi	r22, 0xC8	; 200
+ 8c6:	70 e0       	ldi	r23, 0x00	; 0
+ 8c8:	80 e0       	ldi	r24, 0x00	; 0
+ 8ca:	90 e0       	ldi	r25, 0x00	; 0
+ 8cc:	24 dc       	rcall	.-1976   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:352
+                    switch (pitch)
+ 8ce:	80 91 67 00 	lds	r24, 0x0067	; 0x800067 <pitch>
+ 8d2:	84 30       	cpi	r24, 0x04	; 4
+ 8d4:	09 f4       	brne	.+2      	; 0x8d8 <main+0x280>
+ 8d6:	4f c0       	rjmp	.+158    	; 0x976 <main+0x31e>
+ 8d8:	f0 f5       	brcc	.+124    	; 0x956 <main+0x2fe>
+ 8da:	81 30       	cpi	r24, 0x01	; 1
+ 8dc:	09 f4       	brne	.+2      	; 0x8e0 <main+0x288>
+ 8de:	45 c0       	rjmp	.+138    	; 0x96a <main+0x312>
+ 8e0:	82 30       	cpi	r24, 0x02	; 2
+ 8e2:	09 f4       	brne	.+2      	; 0x8e6 <main+0x28e>
+ 8e4:	45 c0       	rjmp	.+138    	; 0x970 <main+0x318>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:373
+                        break;
+                    case 16:
+                        pitch = 1;
+                        break;
+                    }
+                    ratio = 4.0 / int(pitch);
+ 8e6:	60 91 67 00 	lds	r22, 0x0067	; 0x800067 <pitch>
+ 8ea:	70 e0       	ldi	r23, 0x00	; 0
+ 8ec:	90 e0       	ldi	r25, 0x00	; 0
+ 8ee:	80 e0       	ldi	r24, 0x00	; 0
+ 8f0:	5f d1       	rcall	.+702    	; 0xbb0 <__floatsisf>
+ 8f2:	9b 01       	movw	r18, r22
+ 8f4:	ac 01       	movw	r20, r24
+ 8f6:	60 e0       	ldi	r22, 0x00	; 0
+ 8f8:	70 e0       	ldi	r23, 0x00	; 0
+ 8fa:	80 e8       	ldi	r24, 0x80	; 128
+ 8fc:	90 e4       	ldi	r25, 0x40	; 64
+ 8fe:	bd d0       	rcall	.+378    	; 0xa7a <__divsf3>
+ 900:	60 93 63 00 	sts	0x0063, r22	; 0x800063 <ratio>
+ 904:	70 93 64 00 	sts	0x0064, r23	; 0x800064 <ratio+0x1>
+ 908:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <ratio+0x2>
+ 90c:	90 93 66 00 	sts	0x0066, r25	; 0x800066 <ratio+0x3>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:375
+                }
+                if (digitalRead(SETBTN) == 0)
+ 910:	8d e0       	ldi	r24, 0x0D	; 13
+ 912:	f7 dc       	rcall	.-1554   	; 0x302 <digitalRead>
+ 914:	10 e0       	ldi	r17, 0x00	; 0
+ 916:	89 2b       	or	r24, r25
+ 918:	31 f4       	brne	.+12     	; 0x926 <main+0x2ce>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:377
+                {
+                    delay(200);
+ 91a:	68 ec       	ldi	r22, 0xC8	; 200
+ 91c:	70 e0       	ldi	r23, 0x00	; 0
+ 91e:	80 e0       	ldi	r24, 0x00	; 0
+ 920:	90 e0       	ldi	r25, 0x00	; 0
+ 922:	f9 db       	rcall	.-2062   	; 0x116 <delay>
+main():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:378
+                    mode3state = 1;
+ 924:	11 e0       	ldi	r17, 0x01	; 1
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:380
+                }
+                numPositions(pitch);
+ 926:	80 91 67 00 	lds	r24, 0x0067	; 0x800067 <pitch>
+ 92a:	90 e0       	ldi	r25, 0x00	; 0
+ 92c:	aa dc       	rcall	.-1708   	; 0x282 <numPositions(int)>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:381
+                digit3 = segLUT[numPos[0]];
+ 92e:	e0 91 85 00 	lds	r30, 0x0085	; 0x800085 <numPos>
+ 932:	f0 e0       	ldi	r31, 0x00	; 0
+ 934:	e8 59       	subi	r30, 0x98	; 152
+ 936:	ff 4f       	sbci	r31, 0xFF	; 255
+ 938:	80 81       	ld	r24, Z
+ 93a:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <digit3>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:382
+                digit2 = segLUT[numPos[1]];
+ 93e:	e0 91 86 00 	lds	r30, 0x0086	; 0x800086 <numPos+0x1>
+ 942:	f0 e0       	ldi	r31, 0x00	; 0
+ 944:	e8 59       	subi	r30, 0x98	; 152
+ 946:	ff 4f       	sbci	r31, 0xFF	; 255
+ 948:	80 81       	ld	r24, Z
+ 94a:	80 93 83 00 	sts	0x0083, r24	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:383
+                digit1 = 0b01111100; // "P" for Pitch
+ 94e:	90 92 82 00 	sts	0x0082, r9	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:419
+                }else{
+                    digit1 = 0b00011111; // d
+                    digit2 = 0b00100100; // I
+                    digit3 = 0b01101011; // S
+                }
+                updateLED();
+ 952:	29 dd       	rcall	.-1454   	; 0x3a6 <updateLED()>
+ 954:	a8 cf       	rjmp	.-176    	; 0x8a6 <main+0x24e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:352
+        {
+            case 0:
+                if (digitalRead(STARTBTN) == 0)
+                {
+                    delay(200);
+                    switch (pitch)
+ 956:	8c 30       	cpi	r24, 0x0C	; 12
+ 958:	89 f0       	breq	.+34     	; 0x97c <main+0x324>
+ 95a:	80 31       	cpi	r24, 0x10	; 16
+ 95c:	91 f0       	breq	.+36     	; 0x982 <main+0x32a>
+ 95e:	88 30       	cpi	r24, 0x08	; 8
+ 960:	11 f6       	brne	.-124    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:364
+                        break;
+                    case 4:
+                        pitch = 8;
+                        break;
+                    case 8:
+                        pitch = 12;
+ 962:	8c e0       	ldi	r24, 0x0C	; 12
+ 964:	80 93 67 00 	sts	0x0067, r24	; 0x800067 <pitch>
+ 968:	be cf       	rjmp	.-132    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:355
+                {
+                    delay(200);
+                    switch (pitch)
+                    {
+                    case 1:
+                        pitch = 2;
+ 96a:	00 93 67 00 	sts	0x0067, r16	; 0x800067 <pitch>
+ 96e:	bb cf       	rjmp	.-138    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:358
+                        break;
+                    case 2:
+                        pitch = 4;
+ 970:	50 92 67 00 	sts	0x0067, r5	; 0x800067 <pitch>
+ 974:	b8 cf       	rjmp	.-144    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:361
+                        break;
+                    case 4:
+                        pitch = 8;
+ 976:	70 92 67 00 	sts	0x0067, r7	; 0x800067 <pitch>
+ 97a:	b5 cf       	rjmp	.-150    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:367
+                        break;
+                    case 8:
+                        pitch = 12;
+                        break;
+                    case 12:
+                        pitch = 16;
+ 97c:	60 92 67 00 	sts	0x0067, r6	; 0x800067 <pitch>
+ 980:	b2 cf       	rjmp	.-156    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:370
+                        break;
+                    case 16:
+                        pitch = 1;
+ 982:	80 92 67 00 	sts	0x0067, r8	; 0x800067 <pitch>
+ 986:	af cf       	rjmp	.-162    	; 0x8e6 <main+0x28e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:388
+                digit1 = 0b01111100; // "P" for Pitch
+                updateLED();
+                break;
+            
+            case 1:
+                if (digitalRead(STARTBTN) == 0)
+ 988:	8c e0       	ldi	r24, 0x0C	; 12
+ 98a:	bb dc       	rcall	.-1674   	; 0x302 <digitalRead>
+ 98c:	89 2b       	or	r24, r25
+ 98e:	99 f4       	brne	.+38     	; 0x9b6 <main+0x35e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:390
+                {
+                    delay(200);
+ 990:	68 ec       	ldi	r22, 0xC8	; 200
+ 992:	70 e0       	ldi	r23, 0x00	; 0
+ 994:	80 e0       	ldi	r24, 0x00	; 0
+ 996:	90 e0       	ldi	r25, 0x00	; 0
+ 998:	be db       	rcall	.-2180   	; 0x116 <delay>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:391
+                    switch (countingMode)
+ 99a:	80 91 81 00 	lds	r24, 0x0081	; 0x800081 <countingMode>
+ 99e:	81 30       	cpi	r24, 0x01	; 1
+ 9a0:	f9 f0       	breq	.+62     	; 0x9e0 <main+0x388>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:394
+                    {
+                    case 0:
+                        countingMode = 1;
+ 9a2:	10 93 81 00 	sts	0x0081, r17	; 0x800081 <countingMode>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:400
+                        count = 0;
+                        displayBuf = 0;
+                        break;
+                    case 1:
+                        countingMode = 0;
+                        count = 0;
+ 9a6:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <count+0x1>
+ 9aa:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <count>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:401
+                        displayBuf = 0;
+ 9ae:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <displayBuf+0x1>
+ 9b2:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <displayBuf>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:405
+                        break;
+                    }
+                }
+                if (digitalRead(SETBTN) == 0)
+ 9b6:	8d e0       	ldi	r24, 0x0D	; 13
+ 9b8:	a4 dc       	rcall	.-1720   	; 0x302 <digitalRead>
+ 9ba:	89 2b       	or	r24, r25
+ 9bc:	31 f4       	brne	.+12     	; 0x9ca <main+0x372>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:407
+                {
+                    delay(200);
+ 9be:	68 ec       	ldi	r22, 0xC8	; 200
+ 9c0:	70 e0       	ldi	r23, 0x00	; 0
+ 9c2:	80 e0       	ldi	r24, 0x00	; 0
+ 9c4:	90 e0       	ldi	r25, 0x00	; 0
+ 9c6:	a7 db       	rcall	.-2226   	; 0x116 <delay>
+main():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:408
+                    mode3state = 2;
+ 9c8:	12 e0       	ldi	r17, 0x02	; 2
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:410
+                }
+                if(countingMode == 0){
+ 9ca:	80 91 81 00 	lds	r24, 0x0081	; 0x800081 <countingMode>
+ 9ce:	81 11       	cpse	r24, r1
+ 9d0:	0a c0       	rjmp	.+20     	; 0x9e6 <main+0x38e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:411
+                    digit1 = 0b00100100; // I
+ 9d2:	e0 92 82 00 	sts	0x0082, r14	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:412
+                    digit2 = 0b00001110; // n
+ 9d6:	b0 92 83 00 	sts	0x0083, r11	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:413
+                    digit3 = 0b00000111; // v
+ 9da:	a0 92 84 00 	sts	0x0084, r10	; 0x800084 <digit3>
+ 9de:	b9 cf       	rjmp	.-142    	; 0x952 <main+0x2fa>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:399
+                        countingMode = 1;
+                        count = 0;
+                        displayBuf = 0;
+                        break;
+                    case 1:
+                        countingMode = 0;
+ 9e0:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <countingMode>
+ 9e4:	e0 cf       	rjmp	.-64     	; 0x9a6 <main+0x34e>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:415
+                if(countingMode == 0){
+                    digit1 = 0b00100100; // I
+                    digit2 = 0b00001110; // n
+                    digit3 = 0b00000111; // v
+                }else{
+                    digit1 = 0b00011111; // d
+ 9e6:	d0 92 82 00 	sts	0x0082, r13	; 0x800082 <digit1>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:416
+                    digit2 = 0b00100100; // I
+ 9ea:	e0 92 83 00 	sts	0x0083, r14	; 0x800083 <digit2>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:417
+                    digit3 = 0b01101011; // S
+ 9ee:	c0 92 84 00 	sts	0x0084, r12	; 0x800084 <digit3>
+ 9f2:	af cf       	rjmp	.-162    	; 0x952 <main+0x2fa>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:426
+
+            case 2:
+                // Check EEPROM to see if we've changed the settings
+                // and if we have, save the new ones
+                byte nvmPitch, nvmMode;
+                EEPROM.get(EEPROM_ADDR_PITCH, nvmPitch);
+ 9f4:	be 01       	movw	r22, r28
+ 9f6:	6e 5f       	subi	r22, 0xFE	; 254
+ 9f8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 9fa:	90 e0       	ldi	r25, 0x00	; 0
+ 9fc:	80 e0       	ldi	r24, 0x00	; 0
+ 9fe:	78 dc       	rcall	.-1808   	; 0x2f0 <unsigned char& EEPROMClass::get<unsigned char>(int, unsigned char&) [clone .isra.3]>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:427
+                EEPROM.get(EEPROM_ADDR_MODE, nvmMode);
+ a00:	be 01       	movw	r22, r28
+ a02:	6f 5f       	subi	r22, 0xFF	; 255
+ a04:	7f 4f       	sbci	r23, 0xFF	; 255
+ a06:	81 e0       	ldi	r24, 0x01	; 1
+ a08:	90 e0       	ldi	r25, 0x00	; 0
+ a0a:	72 dc       	rcall	.-1820   	; 0x2f0 <unsigned char& EEPROMClass::get<unsigned char>(int, unsigned char&) [clone .isra.3]>
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:428
+                if (nvmPitch != pitch)
+ a0c:	40 90 67 00 	lds	r4, 0x0067	; 0x800067 <pitch>
+ a10:	8a 81       	ldd	r24, Y+2	; 0x02
+ a12:	84 15       	cp	r24, r4
+ a14:	49 f0       	breq	.+18     	; 0xa28 <main+0x3d0>
+operator*():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ a16:	90 e0       	ldi	r25, 0x00	; 0
+ a18:	80 e0       	ldi	r24, 0x00	; 0
+ a1a:	19 d0       	rcall	.+50     	; 0xa4e <eeprom_read_byte>
+update():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:74
+    EERef &operator &=( uint8_t in )     { return *this = **this & in; }
+    EERef &operator |=( uint8_t in )     { return *this = **this | in; }
+    EERef &operator <<=( uint8_t in )    { return *this = **this << in; }
+    EERef &operator >>=( uint8_t in )    { return *this = **this >> in; }
+
+    EERef &update( uint8_t in )          { return  in != *this ? *this = in : *this; }
+ a1c:	48 16       	cp	r4, r24
+ a1e:	21 f0       	breq	.+8      	; 0xa28 <main+0x3d0>
+_ZN5EERefaSEh():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:61
+    //Assignment/write members.
+    EERef &operator=( const EERef &ref ) { return *this = *ref; }
+    #if  (defined(__AVR_ATtinyX41__) && F_CPU==16000000 && CLOCK_SOURCE==0)
+      EERef &operator=( uint8_t in )       { return safe_eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+    #else
+      EERef &operator=( uint8_t in )       { return eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+ a20:	64 2d       	mov	r22, r4
+ a22:	90 e0       	ldi	r25, 0x00	; 0
+ a24:	80 e0       	ldi	r24, 0x00	; 0
+ a26:	1b d0       	rcall	.+54     	; 0xa5e <eeprom_write_byte>
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:432
+                {
+                    EEPROM.put(EEPROM_ADDR_PITCH, pitch);
+                }
+                if (nvmMode != countingMode)
+ a28:	40 90 81 00 	lds	r4, 0x0081	; 0x800081 <countingMode>
+ a2c:	89 81       	ldd	r24, Y+1	; 0x01
+ a2e:	48 16       	cp	r4, r24
+ a30:	49 f0       	breq	.+18     	; 0xa44 <main+0x3ec>
+operator*():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ a32:	81 e0       	ldi	r24, 0x01	; 1
+ a34:	90 e0       	ldi	r25, 0x00	; 0
+ a36:	0b d0       	rcall	.+22     	; 0xa4e <eeprom_read_byte>
+update():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:74
+    EERef &operator &=( uint8_t in )     { return *this = **this & in; }
+    EERef &operator |=( uint8_t in )     { return *this = **this | in; }
+    EERef &operator <<=( uint8_t in )    { return *this = **this << in; }
+    EERef &operator >>=( uint8_t in )    { return *this = **this >> in; }
+
+    EERef &update( uint8_t in )          { return  in != *this ? *this = in : *this; }
+ a38:	48 16       	cp	r4, r24
+ a3a:	21 f0       	breq	.+8      	; 0xa44 <main+0x3ec>
+_ZN5EERefaSEh():
+C:\Users\USER\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\libraries\EEPROM/EEPROM.h:61
+    //Assignment/write members.
+    EERef &operator=( const EERef &ref ) { return *this = *ref; }
+    #if  (defined(__AVR_ATtinyX41__) && F_CPU==16000000 && CLOCK_SOURCE==0)
+      EERef &operator=( uint8_t in )       { return safe_eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+    #else
+      EERef &operator=( uint8_t in )       { return eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+ a3c:	64 2d       	mov	r22, r4
+ a3e:	81 e0       	ldi	r24, 0x01	; 1
+ a40:	90 e0       	ldi	r25, 0x00	; 0
+ a42:	0d d0       	rcall	.+26     	; 0xa5e <eeprom_write_byte>
+mode3():
+C:\Users\USER\Documents\GitHub\BeanCounter\firmware\BeanCounter_V10/BeanCounter_V10.ino:436
+                {
+                    EEPROM.put(EEPROM_ADDR_MODE, countingMode);
+                }                
+                deviceMode = returnMode; // Return to whichever mode sent us here
+ a44:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <returnMode>
+ a48:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <deviceMode>
+ a4c:	2c cf       	rjmp	.-424    	; 0x8a6 <main+0x24e>
+
+00000a4e <eeprom_read_byte>:
+eeprom_read_byte():
+ a4e:	e1 99       	sbic	0x1c, 1	; 28
+ a50:	fe cf       	rjmp	.-4      	; 0xa4e <eeprom_read_byte>
+ a52:	9f bb       	out	0x1f, r25	; 31
+ a54:	8e bb       	out	0x1e, r24	; 30
+ a56:	e0 9a       	sbi	0x1c, 0	; 28
+ a58:	99 27       	eor	r25, r25
+ a5a:	8d b3       	in	r24, 0x1d	; 29
+ a5c:	08 95       	ret
+
+00000a5e <eeprom_write_byte>:
+eeprom_write_byte():
+ a5e:	26 2f       	mov	r18, r22
+
+00000a60 <eeprom_write_r18>:
+ a60:	e1 99       	sbic	0x1c, 1	; 28
+ a62:	fe cf       	rjmp	.-4      	; 0xa60 <eeprom_write_r18>
+ a64:	1c ba       	out	0x1c, r1	; 28
+ a66:	9f bb       	out	0x1f, r25	; 31
+ a68:	8e bb       	out	0x1e, r24	; 30
+ a6a:	2d bb       	out	0x1d, r18	; 29
+ a6c:	0f b6       	in	r0, 0x3f	; 63
+ a6e:	f8 94       	cli
+ a70:	e2 9a       	sbi	0x1c, 2	; 28
+ a72:	e1 9a       	sbi	0x1c, 1	; 28
+ a74:	0f be       	out	0x3f, r0	; 63
+ a76:	01 96       	adiw	r24, 0x01	; 1
+ a78:	08 95       	ret
+
+00000a7a <__divsf3>:
+__divsf3():
+ a7a:	0c d0       	rcall	.+24     	; 0xa94 <__divsf3x>
+ a7c:	eb c0       	rjmp	.+470    	; 0xc54 <__fp_round>
+ a7e:	e3 d0       	rcall	.+454    	; 0xc46 <__fp_pscB>
+ a80:	40 f0       	brcs	.+16     	; 0xa92 <__divsf3+0x18>
+ a82:	da d0       	rcall	.+436    	; 0xc38 <__fp_pscA>
+ a84:	30 f0       	brcs	.+12     	; 0xa92 <__divsf3+0x18>
+ a86:	21 f4       	brne	.+8      	; 0xa90 <__divsf3+0x16>
+ a88:	5f 3f       	cpi	r21, 0xFF	; 255
+ a8a:	19 f0       	breq	.+6      	; 0xa92 <__divsf3+0x18>
+ a8c:	cc c0       	rjmp	.+408    	; 0xc26 <__fp_inf>
+ a8e:	51 11       	cpse	r21, r1
+ a90:	15 c1       	rjmp	.+554    	; 0xcbc <__fp_szero>
+ a92:	cf c0       	rjmp	.+414    	; 0xc32 <__fp_nan>
+
+00000a94 <__divsf3x>:
+__divsf3x():
+ a94:	f0 d0       	rcall	.+480    	; 0xc76 <__fp_split3>
+ a96:	98 f3       	brcs	.-26     	; 0xa7e <__divsf3+0x4>
+
+00000a98 <__divsf3_pse>:
+ a98:	99 23       	and	r25, r25
+ a9a:	c9 f3       	breq	.-14     	; 0xa8e <__divsf3+0x14>
+ a9c:	55 23       	and	r21, r21
+ a9e:	b1 f3       	breq	.-20     	; 0xa8c <__divsf3+0x12>
+ aa0:	95 1b       	sub	r25, r21
+ aa2:	55 0b       	sbc	r21, r21
+ aa4:	bb 27       	eor	r27, r27
+ aa6:	aa 27       	eor	r26, r26
+ aa8:	62 17       	cp	r22, r18
+ aaa:	73 07       	cpc	r23, r19
+ aac:	84 07       	cpc	r24, r20
+ aae:	38 f0       	brcs	.+14     	; 0xabe <__divsf3_pse+0x26>
+ ab0:	9f 5f       	subi	r25, 0xFF	; 255
+ ab2:	5f 4f       	sbci	r21, 0xFF	; 255
+ ab4:	22 0f       	add	r18, r18
+ ab6:	33 1f       	adc	r19, r19
+ ab8:	44 1f       	adc	r20, r20
+ aba:	aa 1f       	adc	r26, r26
+ abc:	a9 f3       	breq	.-22     	; 0xaa8 <__divsf3_pse+0x10>
+ abe:	33 d0       	rcall	.+102    	; 0xb26 <__divsf3_pse+0x8e>
+ ac0:	0e 2e       	mov	r0, r30
+ ac2:	3a f0       	brmi	.+14     	; 0xad2 <__divsf3_pse+0x3a>
+ ac4:	e0 e8       	ldi	r30, 0x80	; 128
+ ac6:	30 d0       	rcall	.+96     	; 0xb28 <__divsf3_pse+0x90>
+ ac8:	91 50       	subi	r25, 0x01	; 1
+ aca:	50 40       	sbci	r21, 0x00	; 0
+ acc:	e6 95       	lsr	r30
+ ace:	00 1c       	adc	r0, r0
+ ad0:	ca f7       	brpl	.-14     	; 0xac4 <__divsf3_pse+0x2c>
+ ad2:	29 d0       	rcall	.+82     	; 0xb26 <__divsf3_pse+0x8e>
+ ad4:	fe 2f       	mov	r31, r30
+ ad6:	27 d0       	rcall	.+78     	; 0xb26 <__divsf3_pse+0x8e>
+ ad8:	66 0f       	add	r22, r22
+ ada:	77 1f       	adc	r23, r23
+ adc:	88 1f       	adc	r24, r24
+ ade:	bb 1f       	adc	r27, r27
+ ae0:	26 17       	cp	r18, r22
+ ae2:	37 07       	cpc	r19, r23
+ ae4:	48 07       	cpc	r20, r24
+ ae6:	ab 07       	cpc	r26, r27
+ ae8:	b0 e8       	ldi	r27, 0x80	; 128
+ aea:	09 f0       	breq	.+2      	; 0xaee <__divsf3_pse+0x56>
+ aec:	bb 0b       	sbc	r27, r27
+ aee:	80 2d       	mov	r24, r0
+ af0:	bf 01       	movw	r22, r30
+ af2:	ff 27       	eor	r31, r31
+ af4:	93 58       	subi	r25, 0x83	; 131
+ af6:	5f 4f       	sbci	r21, 0xFF	; 255
+ af8:	2a f0       	brmi	.+10     	; 0xb04 <__divsf3_pse+0x6c>
+ afa:	9e 3f       	cpi	r25, 0xFE	; 254
+ afc:	51 05       	cpc	r21, r1
+ afe:	68 f0       	brcs	.+26     	; 0xb1a <__divsf3_pse+0x82>
+ b00:	92 c0       	rjmp	.+292    	; 0xc26 <__fp_inf>
+ b02:	dc c0       	rjmp	.+440    	; 0xcbc <__fp_szero>
+ b04:	5f 3f       	cpi	r21, 0xFF	; 255
+ b06:	ec f3       	brlt	.-6      	; 0xb02 <__divsf3_pse+0x6a>
+ b08:	98 3e       	cpi	r25, 0xE8	; 232
+ b0a:	dc f3       	brlt	.-10     	; 0xb02 <__divsf3_pse+0x6a>
+ b0c:	86 95       	lsr	r24
+ b0e:	77 95       	ror	r23
+ b10:	67 95       	ror	r22
+ b12:	b7 95       	ror	r27
+ b14:	f7 95       	ror	r31
+ b16:	9f 5f       	subi	r25, 0xFF	; 255
+ b18:	c9 f7       	brne	.-14     	; 0xb0c <__divsf3_pse+0x74>
+ b1a:	88 0f       	add	r24, r24
+ b1c:	91 1d       	adc	r25, r1
+ b1e:	96 95       	lsr	r25
+ b20:	87 95       	ror	r24
+ b22:	97 f9       	bld	r25, 7
+ b24:	08 95       	ret
+ b26:	e1 e0       	ldi	r30, 0x01	; 1
+ b28:	66 0f       	add	r22, r22
+ b2a:	77 1f       	adc	r23, r23
+ b2c:	88 1f       	adc	r24, r24
+ b2e:	bb 1f       	adc	r27, r27
+ b30:	62 17       	cp	r22, r18
+ b32:	73 07       	cpc	r23, r19
+ b34:	84 07       	cpc	r24, r20
+ b36:	ba 07       	cpc	r27, r26
+ b38:	20 f0       	brcs	.+8      	; 0xb42 <__divsf3_pse+0xaa>
+ b3a:	62 1b       	sub	r22, r18
+ b3c:	73 0b       	sbc	r23, r19
+ b3e:	84 0b       	sbc	r24, r20
+ b40:	ba 0b       	sbc	r27, r26
+ b42:	ee 1f       	adc	r30, r30
+ b44:	88 f7       	brcc	.-30     	; 0xb28 <__divsf3_pse+0x90>
+ b46:	e0 95       	com	r30
+ b48:	08 95       	ret
+
+00000b4a <__fixsfsi>:
+ b4a:	04 d0       	rcall	.+8      	; 0xb54 <__fixunssfsi>
+ b4c:	68 94       	set
+ b4e:	b1 11       	cpse	r27, r1
+ b50:	b5 c0       	rjmp	.+362    	; 0xcbc <__fp_szero>
+ b52:	08 95       	ret
+
+00000b54 <__fixunssfsi>:
+ b54:	98 d0       	rcall	.+304    	; 0xc86 <__fp_splitA>
+ b56:	88 f0       	brcs	.+34     	; 0xb7a <__fixunssfsi+0x26>
+ b58:	9f 57       	subi	r25, 0x7F	; 127
+ b5a:	90 f0       	brcs	.+36     	; 0xb80 <__fixunssfsi+0x2c>
+ b5c:	b9 2f       	mov	r27, r25
+ b5e:	99 27       	eor	r25, r25
+__fixunssfsi():
+ b60:	b7 51       	subi	r27, 0x17	; 23
+ b62:	a0 f0       	brcs	.+40     	; 0xb8c <__fixunssfsi+0x38>
+ b64:	d1 f0       	breq	.+52     	; 0xb9a <__fixunssfsi+0x46>
+ b66:	66 0f       	add	r22, r22
+ b68:	77 1f       	adc	r23, r23
+ b6a:	88 1f       	adc	r24, r24
+ b6c:	99 1f       	adc	r25, r25
+ b6e:	1a f0       	brmi	.+6      	; 0xb76 <__fixunssfsi+0x22>
+ b70:	ba 95       	dec	r27
+ b72:	c9 f7       	brne	.-14     	; 0xb66 <__fixunssfsi+0x12>
+ b74:	12 c0       	rjmp	.+36     	; 0xb9a <__fixunssfsi+0x46>
+ b76:	b1 30       	cpi	r27, 0x01	; 1
+ b78:	81 f0       	breq	.+32     	; 0xb9a <__fixunssfsi+0x46>
+ b7a:	9f d0       	rcall	.+318    	; 0xcba <__fp_zero>
+ b7c:	b1 e0       	ldi	r27, 0x01	; 1
+ b7e:	08 95       	ret
+ b80:	9c c0       	rjmp	.+312    	; 0xcba <__fp_zero>
+ b82:	67 2f       	mov	r22, r23
+ b84:	78 2f       	mov	r23, r24
+ b86:	88 27       	eor	r24, r24
+ b88:	b8 5f       	subi	r27, 0xF8	; 248
+ b8a:	39 f0       	breq	.+14     	; 0xb9a <__fixunssfsi+0x46>
+ b8c:	b9 3f       	cpi	r27, 0xF9	; 249
+ b8e:	cc f3       	brlt	.-14     	; 0xb82 <__fixunssfsi+0x2e>
+ b90:	86 95       	lsr	r24
+ b92:	77 95       	ror	r23
+ b94:	67 95       	ror	r22
+ b96:	b3 95       	inc	r27
+ b98:	d9 f7       	brne	.-10     	; 0xb90 <__fixunssfsi+0x3c>
+ b9a:	3e f4       	brtc	.+14     	; 0xbaa <__fixunssfsi+0x56>
+ b9c:	90 95       	com	r25
+ b9e:	80 95       	com	r24
+ ba0:	70 95       	com	r23
+ ba2:	61 95       	neg	r22
+ ba4:	7f 4f       	sbci	r23, 0xFF	; 255
+ ba6:	8f 4f       	sbci	r24, 0xFF	; 255
+ ba8:	9f 4f       	sbci	r25, 0xFF	; 255
+ baa:	08 95       	ret
+
+00000bac <__floatunsisf>:
+__floatunsisf():
+ bac:	e8 94       	clt
+ bae:	09 c0       	rjmp	.+18     	; 0xbc2 <__floatsisf+0x12>
+
+00000bb0 <__floatsisf>:
+ bb0:	97 fb       	bst	r25, 7
+ bb2:	3e f4       	brtc	.+14     	; 0xbc2 <__floatsisf+0x12>
+ bb4:	90 95       	com	r25
+ bb6:	80 95       	com	r24
+ bb8:	70 95       	com	r23
+ bba:	61 95       	neg	r22
+ bbc:	7f 4f       	sbci	r23, 0xFF	; 255
+ bbe:	8f 4f       	sbci	r24, 0xFF	; 255
+ bc0:	9f 4f       	sbci	r25, 0xFF	; 255
+ bc2:	99 23       	and	r25, r25
+ bc4:	a9 f0       	breq	.+42     	; 0xbf0 <__floatsisf+0x40>
+ bc6:	f9 2f       	mov	r31, r25
+ bc8:	96 e9       	ldi	r25, 0x96	; 150
+ bca:	bb 27       	eor	r27, r27
+ bcc:	93 95       	inc	r25
+ bce:	f6 95       	lsr	r31
+ bd0:	87 95       	ror	r24
+ bd2:	77 95       	ror	r23
+ bd4:	67 95       	ror	r22
+ bd6:	b7 95       	ror	r27
+ bd8:	f1 11       	cpse	r31, r1
+ bda:	f8 cf       	rjmp	.-16     	; 0xbcc <__floatsisf+0x1c>
+ bdc:	fa f4       	brpl	.+62     	; 0xc1c <__floatsisf+0x6c>
+ bde:	bb 0f       	add	r27, r27
+ be0:	11 f4       	brne	.+4      	; 0xbe6 <__floatsisf+0x36>
+ be2:	60 ff       	sbrs	r22, 0
+ be4:	1b c0       	rjmp	.+54     	; 0xc1c <__floatsisf+0x6c>
+ be6:	6f 5f       	subi	r22, 0xFF	; 255
+ be8:	7f 4f       	sbci	r23, 0xFF	; 255
+ bea:	8f 4f       	sbci	r24, 0xFF	; 255
+ bec:	9f 4f       	sbci	r25, 0xFF	; 255
+ bee:	16 c0       	rjmp	.+44     	; 0xc1c <__floatsisf+0x6c>
+ bf0:	88 23       	and	r24, r24
+ bf2:	11 f0       	breq	.+4      	; 0xbf8 <__floatsisf+0x48>
+ bf4:	96 e9       	ldi	r25, 0x96	; 150
+ bf6:	11 c0       	rjmp	.+34     	; 0xc1a <__floatsisf+0x6a>
+ bf8:	77 23       	and	r23, r23
+ bfa:	21 f0       	breq	.+8      	; 0xc04 <__floatsisf+0x54>
+ bfc:	9e e8       	ldi	r25, 0x8E	; 142
+ bfe:	87 2f       	mov	r24, r23
+ c00:	76 2f       	mov	r23, r22
+ c02:	05 c0       	rjmp	.+10     	; 0xc0e <__floatsisf+0x5e>
+ c04:	66 23       	and	r22, r22
+ c06:	71 f0       	breq	.+28     	; 0xc24 <__floatsisf+0x74>
+ c08:	96 e8       	ldi	r25, 0x86	; 134
+ c0a:	86 2f       	mov	r24, r22
+ c0c:	70 e0       	ldi	r23, 0x00	; 0
+ c0e:	60 e0       	ldi	r22, 0x00	; 0
+ c10:	2a f0       	brmi	.+10     	; 0xc1c <__floatsisf+0x6c>
+ c12:	9a 95       	dec	r25
+ c14:	66 0f       	add	r22, r22
+ c16:	77 1f       	adc	r23, r23
+ c18:	88 1f       	adc	r24, r24
+ c1a:	da f7       	brpl	.-10     	; 0xc12 <__floatsisf+0x62>
+ c1c:	88 0f       	add	r24, r24
+ c1e:	96 95       	lsr	r25
+ c20:	87 95       	ror	r24
+ c22:	97 f9       	bld	r25, 7
+ c24:	08 95       	ret
+
+00000c26 <__fp_inf>:
+__fp_inf():
+ c26:	97 f9       	bld	r25, 7
+ c28:	9f 67       	ori	r25, 0x7F	; 127
+ c2a:	80 e8       	ldi	r24, 0x80	; 128
+ c2c:	70 e0       	ldi	r23, 0x00	; 0
+ c2e:	60 e0       	ldi	r22, 0x00	; 0
+ c30:	08 95       	ret
+
+00000c32 <__fp_nan>:
+__fp_nan():
+ c32:	9f ef       	ldi	r25, 0xFF	; 255
+ c34:	80 ec       	ldi	r24, 0xC0	; 192
+ c36:	08 95       	ret
+
+00000c38 <__fp_pscA>:
+__fp_pscA():
+ c38:	00 24       	eor	r0, r0
+ c3a:	0a 94       	dec	r0
+ c3c:	16 16       	cp	r1, r22
+ c3e:	17 06       	cpc	r1, r23
+ c40:	18 06       	cpc	r1, r24
+ c42:	09 06       	cpc	r0, r25
+ c44:	08 95       	ret
+
+00000c46 <__fp_pscB>:
+__fp_pscB():
+ c46:	00 24       	eor	r0, r0
+ c48:	0a 94       	dec	r0
+ c4a:	12 16       	cp	r1, r18
+ c4c:	13 06       	cpc	r1, r19
+ c4e:	14 06       	cpc	r1, r20
+ c50:	05 06       	cpc	r0, r21
+ c52:	08 95       	ret
+
+00000c54 <__fp_round>:
+__fp_round():
+ c54:	09 2e       	mov	r0, r25
+ c56:	03 94       	inc	r0
+ c58:	00 0c       	add	r0, r0
+ c5a:	11 f4       	brne	.+4      	; 0xc60 <__fp_round+0xc>
+ c5c:	88 23       	and	r24, r24
+ c5e:	52 f0       	brmi	.+20     	; 0xc74 <__fp_round+0x20>
+ c60:	bb 0f       	add	r27, r27
+ c62:	40 f4       	brcc	.+16     	; 0xc74 <__fp_round+0x20>
+ c64:	bf 2b       	or	r27, r31
+ c66:	11 f4       	brne	.+4      	; 0xc6c <__fp_round+0x18>
+ c68:	60 ff       	sbrs	r22, 0
+ c6a:	04 c0       	rjmp	.+8      	; 0xc74 <__fp_round+0x20>
+ c6c:	6f 5f       	subi	r22, 0xFF	; 255
+ c6e:	7f 4f       	sbci	r23, 0xFF	; 255
+ c70:	8f 4f       	sbci	r24, 0xFF	; 255
+ c72:	9f 4f       	sbci	r25, 0xFF	; 255
+ c74:	08 95       	ret
+
+00000c76 <__fp_split3>:
+__fp_split3():
+ c76:	57 fd       	sbrc	r21, 7
+ c78:	90 58       	subi	r25, 0x80	; 128
+ c7a:	44 0f       	add	r20, r20
+ c7c:	55 1f       	adc	r21, r21
+ c7e:	59 f0       	breq	.+22     	; 0xc96 <__fp_splitA+0x10>
+ c80:	5f 3f       	cpi	r21, 0xFF	; 255
+ c82:	71 f0       	breq	.+28     	; 0xca0 <__fp_splitA+0x1a>
+ c84:	47 95       	ror	r20
+
+00000c86 <__fp_splitA>:
+ c86:	88 0f       	add	r24, r24
+ c88:	97 fb       	bst	r25, 7
+ c8a:	99 1f       	adc	r25, r25
+ c8c:	61 f0       	breq	.+24     	; 0xca6 <__fp_splitA+0x20>
+ c8e:	9f 3f       	cpi	r25, 0xFF	; 255
+ c90:	79 f0       	breq	.+30     	; 0xcb0 <__fp_splitA+0x2a>
+ c92:	87 95       	ror	r24
+ c94:	08 95       	ret
+ c96:	12 16       	cp	r1, r18
+ c98:	13 06       	cpc	r1, r19
+ c9a:	14 06       	cpc	r1, r20
+ c9c:	55 1f       	adc	r21, r21
+ c9e:	f2 cf       	rjmp	.-28     	; 0xc84 <__fp_split3+0xe>
+ ca0:	46 95       	lsr	r20
+ ca2:	f1 df       	rcall	.-30     	; 0xc86 <__fp_splitA>
+ ca4:	08 c0       	rjmp	.+16     	; 0xcb6 <__fp_splitA+0x30>
+ ca6:	16 16       	cp	r1, r22
+ ca8:	17 06       	cpc	r1, r23
+ caa:	18 06       	cpc	r1, r24
+ cac:	99 1f       	adc	r25, r25
+ cae:	f1 cf       	rjmp	.-30     	; 0xc92 <__fp_splitA+0xc>
+ cb0:	86 95       	lsr	r24
+ cb2:	71 05       	cpc	r23, r1
+ cb4:	61 05       	cpc	r22, r1
+ cb6:	08 94       	sec
+ cb8:	08 95       	ret
+
+00000cba <__fp_zero>:
+__fp_zero():
+ cba:	e8 94       	clt
+
+00000cbc <__fp_szero>:
+ cbc:	bb 27       	eor	r27, r27
+ cbe:	66 27       	eor	r22, r22
+ cc0:	77 27       	eor	r23, r23
+ cc2:	cb 01       	movw	r24, r22
+ cc4:	97 f9       	bld	r25, 7
+ cc6:	08 95       	ret
+
+00000cc8 <__mulsf3>:
+__mulsf3():
+ cc8:	0a d0       	rcall	.+20     	; 0xcde <__mulsf3x>
+ cca:	c4 cf       	rjmp	.-120    	; 0xc54 <__fp_round>
+ ccc:	b5 df       	rcall	.-150    	; 0xc38 <__fp_pscA>
+ cce:	28 f0       	brcs	.+10     	; 0xcda <__mulsf3+0x12>
+ cd0:	ba df       	rcall	.-140    	; 0xc46 <__fp_pscB>
+ cd2:	18 f0       	brcs	.+6      	; 0xcda <__mulsf3+0x12>
+ cd4:	95 23       	and	r25, r21
+ cd6:	09 f0       	breq	.+2      	; 0xcda <__mulsf3+0x12>
+ cd8:	a6 cf       	rjmp	.-180    	; 0xc26 <__fp_inf>
+ cda:	ab cf       	rjmp	.-170    	; 0xc32 <__fp_nan>
+ cdc:	ef cf       	rjmp	.-34     	; 0xcbc <__fp_szero>
+
+00000cde <__mulsf3x>:
+__mulsf3x():
+ cde:	cb df       	rcall	.-106    	; 0xc76 <__fp_split3>
+ ce0:	a8 f3       	brcs	.-22     	; 0xccc <__mulsf3+0x4>
+
+00000ce2 <__mulsf3_pse>:
+ ce2:	99 23       	and	r25, r25
+ ce4:	d9 f3       	breq	.-10     	; 0xcdc <__mulsf3+0x14>
+ ce6:	55 23       	and	r21, r21
+ ce8:	c9 f3       	breq	.-14     	; 0xcdc <__mulsf3+0x14>
+ cea:	95 0f       	add	r25, r21
+ cec:	50 e0       	ldi	r21, 0x00	; 0
+ cee:	55 1f       	adc	r21, r21
+ cf0:	aa 27       	eor	r26, r26
+ cf2:	ee 27       	eor	r30, r30
+ cf4:	ff 27       	eor	r31, r31
+ cf6:	bb 27       	eor	r27, r27
+ cf8:	00 24       	eor	r0, r0
+ cfa:	08 94       	sec
+ cfc:	67 95       	ror	r22
+ cfe:	20 f4       	brcc	.+8      	; 0xd08 <__mulsf3_pse+0x26>
+ d00:	e2 0f       	add	r30, r18
+ d02:	f3 1f       	adc	r31, r19
+ d04:	b4 1f       	adc	r27, r20
+ d06:	0a 1e       	adc	r0, r26
+ d08:	22 0f       	add	r18, r18
+ d0a:	33 1f       	adc	r19, r19
+ d0c:	44 1f       	adc	r20, r20
+ d0e:	aa 1f       	adc	r26, r26
+ d10:	66 95       	lsr	r22
+ d12:	a9 f7       	brne	.-22     	; 0xcfe <__mulsf3_pse+0x1c>
+ d14:	77 95       	ror	r23
+ d16:	30 f4       	brcc	.+12     	; 0xd24 <__mulsf3_pse+0x42>
+ d18:	f3 0f       	add	r31, r19
+ d1a:	b4 1f       	adc	r27, r20
+ d1c:	0a 1e       	adc	r0, r26
+ d1e:	12 1e       	adc	r1, r18
+ d20:	08 f4       	brcc	.+2      	; 0xd24 <__mulsf3_pse+0x42>
+ d22:	63 95       	inc	r22
+ d24:	33 0f       	add	r19, r19
+ d26:	44 1f       	adc	r20, r20
+ d28:	aa 1f       	adc	r26, r26
+ d2a:	22 1f       	adc	r18, r18
+ d2c:	76 95       	lsr	r23
+ d2e:	99 f7       	brne	.-26     	; 0xd16 <__mulsf3_pse+0x34>
+ d30:	87 95       	ror	r24
+ d32:	20 f4       	brcc	.+8      	; 0xd3c <__mulsf3_pse+0x5a>
+ d34:	b4 0f       	add	r27, r20
+ d36:	0a 1e       	adc	r0, r26
+ d38:	12 1e       	adc	r1, r18
+ d3a:	63 1f       	adc	r22, r19
+ d3c:	44 0f       	add	r20, r20
+ d3e:	aa 1f       	adc	r26, r26
+ d40:	22 1f       	adc	r18, r18
+ d42:	33 1f       	adc	r19, r19
+ d44:	86 95       	lsr	r24
+ d46:	a9 f7       	brne	.-22     	; 0xd32 <__mulsf3_pse+0x50>
+ d48:	86 2f       	mov	r24, r22
+ d4a:	71 2d       	mov	r23, r1
+ d4c:	60 2d       	mov	r22, r0
+ d4e:	11 24       	eor	r1, r1
+ d50:	9f 57       	subi	r25, 0x7F	; 127
+ d52:	50 40       	sbci	r21, 0x00	; 0
+ d54:	8a f0       	brmi	.+34     	; 0xd78 <__mulsf3_pse+0x96>
+ d56:	e1 f0       	breq	.+56     	; 0xd90 <__mulsf3_pse+0xae>
+ d58:	88 23       	and	r24, r24
+ d5a:	4a f0       	brmi	.+18     	; 0xd6e <__mulsf3_pse+0x8c>
+ d5c:	ee 0f       	add	r30, r30
+ d5e:	ff 1f       	adc	r31, r31
+ d60:	bb 1f       	adc	r27, r27
+ d62:	66 1f       	adc	r22, r22
+ d64:	77 1f       	adc	r23, r23
+ d66:	88 1f       	adc	r24, r24
+ d68:	91 50       	subi	r25, 0x01	; 1
+ d6a:	50 40       	sbci	r21, 0x00	; 0
+ d6c:	a9 f7       	brne	.-22     	; 0xd58 <__mulsf3_pse+0x76>
+ d6e:	9e 3f       	cpi	r25, 0xFE	; 254
+ d70:	51 05       	cpc	r21, r1
+ d72:	70 f0       	brcs	.+28     	; 0xd90 <__mulsf3_pse+0xae>
+ d74:	58 cf       	rjmp	.-336    	; 0xc26 <__fp_inf>
+ d76:	a2 cf       	rjmp	.-188    	; 0xcbc <__fp_szero>
+ d78:	5f 3f       	cpi	r21, 0xFF	; 255
+ d7a:	ec f3       	brlt	.-6      	; 0xd76 <__mulsf3_pse+0x94>
+ d7c:	98 3e       	cpi	r25, 0xE8	; 232
+ d7e:	dc f3       	brlt	.-10     	; 0xd76 <__mulsf3_pse+0x94>
+ d80:	86 95       	lsr	r24
+ d82:	77 95       	ror	r23
+ d84:	67 95       	ror	r22
+ d86:	b7 95       	ror	r27
+ d88:	f7 95       	ror	r31
+ d8a:	e7 95       	ror	r30
+ d8c:	9f 5f       	subi	r25, 0xFF	; 255
+ d8e:	c1 f7       	brne	.-16     	; 0xd80 <__mulsf3_pse+0x9e>
+ d90:	fe 2b       	or	r31, r30
+ d92:	88 0f       	add	r24, r24
+ d94:	91 1d       	adc	r25, r1
+ d96:	96 95       	lsr	r25
+ d98:	87 95       	ror	r24
+ d9a:	97 f9       	bld	r25, 7
+ d9c:	08 95       	ret
+
+00000d9e <__divmodhi4>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ d9e:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ da0:	07 2e       	mov	r0, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ da2:	16 f4       	brtc	.+4      	; 0xda8 <__divmodhi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ da4:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ da6:	06 d0       	rcall	.+12     	; 0xdb4 <__divmodhi4_neg1>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ da8:	77 fd       	sbrc	r23, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ daa:	08 d0       	rcall	.+16     	; 0xdbc <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ dac:	0b d0       	rcall	.+22     	; 0xdc4 <__udivmodhi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ dae:	07 fc       	sbrc	r0, 7
+__divmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ db0:	05 d0       	rcall	.+10     	; 0xdbc <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ db2:	3e f4       	brtc	.+14     	; 0xdc2 <__divmodhi4_exit>
+
+00000db4 <__divmodhi4_neg1>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ db4:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ db6:	81 95       	neg	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ db8:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ dba:	08 95       	ret
+
+00000dbc <__divmodhi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ dbc:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ dbe:	61 95       	neg	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ dc0:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000dc2 <__divmodhi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ dc2:	08 95       	ret
+
+00000dc4 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ dc4:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ dc6:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ dc8:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ dca:	07 c0       	rjmp	.+14     	; 0xdda <__udivmodhi4_ep>
+
+00000dcc <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ dcc:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ dce:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ dd0:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ dd2:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ dd4:	10 f0       	brcs	.+4      	; 0xdda <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ dd6:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ dd8:	b7 0b       	sbc	r27, r23
+
+00000dda <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ dda:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ ddc:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ dde:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ de0:	a9 f7       	brne	.-22     	; 0xdcc <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ de2:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ de4:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ de6:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ de8:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ dea:	08 95       	ret
+
+00000dec <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ dec:	f8 94       	cli
+
+00000dee <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ dee:	ff cf       	rjmp	.-2      	; 0xdee <__stop_program>
