@@ -6,7 +6,7 @@ BeanCounter is an SMT parts counter that fits in your pocket. It’s battery pow
 
 ![BeanCounter on white background](https://github.com/NPoole/BeanCounter/blob/main/docs/beancounter-front.jpg)
 
-## Available for Pre-Order Now on [Crowd Supply](https://www.crowdsupply.com/great-big-factory/beancounter)!
+## Available Now at [Crowd Supply](https://www.crowdsupply.com/great-big-factory/beancounter), [Mouser](https://www.mouser.com/c/electromechanical/industrial-automation/?m=Great%20Big%20Factory), and [SparkFun](https://www.sparkfun.com/products/21738)
 
 To use BeanCounter, simply turn it on and start pulling tape through. It will immediately begin counting your parts using one of two modes:
 
