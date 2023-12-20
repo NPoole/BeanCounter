@@ -5,6 +5,7 @@
 BeanCounter is an SMT parts counter that fits in your pocket. It’s battery powered and uses two IR photointerrupters to count parts about as fast as you can pull them through. It works with any opaque, 8-mm-wide carrier tape up to 2 mm in height, which covers most 0805-or-smaller LEDs and passives, as well as SOT23 transistors. It’s an affordable SMT tape counter without unnecessary bells and whistles.
 
 ![BeanCounter on white background](https://github.com/NPoole/BeanCounter/blob/main/docs/BeanCounter-Feature_Lit.jpg?raw=true)
+<p align="center"><em>Photo Courtesy of Hannah Wood/SparkFun Electronics</em></p>
 
 ## Available Now at [Crowd Supply](https://www.crowdsupply.com/great-big-factory/beancounter), [Mouser](https://www.mouser.com/c/electromechanical/industrial-automation/?m=Great%20Big%20Factory), and [SparkFun](https://www.sparkfun.com/products/21738)
 
